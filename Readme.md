@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Валерия Моисеенко](https://up.htmlacademy.ru/adaptive/24/user/1761057).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
