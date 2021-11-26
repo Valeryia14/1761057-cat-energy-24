@@ -12,7 +12,7 @@
           <svg class="header-logo__name" width="101" height="18"><use></use></svg>
         </a>
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
+          <button class="main-nav__toggle" hidden="true" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="wrapper">
@@ -65,7 +65,7 @@
       <section class="process">
         <div class="wrapper">
           <h2 class="process__title">Как это работает</h2>
-          <ul class="process__list">
+          <ol class="process__list">
             <li class="process__item process__item--composition">
               <p class="process__description">Функциональное питание содержит только полезные питательные вещества.</p>
             </li>
@@ -78,7 +78,7 @@
             <li class="process__item process__item--result">
               <p class="process__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
             </li>
-          </ul>
+          </ol>
         </div>
       </section>
 
@@ -103,13 +103,11 @@
           </div>
           <div class="effect">
             <div class="effect__photos">
-              <img class="effect__photo effect__photo--before" src="../source/img/cat_fat.png" alt="Каким был Ваш кот." width="280" height="232">
-              <img class="effect__photo effect__photo--after" src="../source/img/cat_thin.png" alt="Каким стал Ваш кот." width="243" height="232">
+              <img class="effect__photo effect__photo--before" src="./img/cat_fat.png" alt="Каким был Ваш кот." width="280" height="232">
+              <img class="effect__photo effect__photo--after" src="./img/cat_thin.png" alt="Каким стал Ваш кот." width="243" height="232">
             </div>
-            <div class="effect__slider">
+            <div class="effect__slider" hidden="true">
               <button class="effect__button">Было</button>
-              <label for="switch"></label>
-              <input class="effect__toggle" id="switch" type="range" name="range">
               <button class="effect__button">Стало</button>
             </div>
           </div>
