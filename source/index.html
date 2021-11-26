@@ -5,30 +5,32 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
-    <head class="header">
-      <a class="header__logo" href="#">
-        <svg class="header__logo-img" width="34" height="38"><use></use></svg>
-        <svg class="header__logo-name" width="101" height="18"><use></use></svg>
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link" href="#">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </head>
+    <header class="header">
+      <div class="header-wrapper">
+        <a class="header-logo" href="#">
+          <svg class="header-logo__img" width="34" height="38"><use></use></svg>
+          <svg class="header-logo__name" width="101" height="18"><use></use></svg>
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--active">
+                <a class="main-nav__link" href="#">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Каталог продукции</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
 
     <main class="main">
       <section class="offer">
@@ -85,7 +87,7 @@
           <h2 class="example__title">Живой пример</h2>
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
              Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <dl class="stats__list">
+          <dl class="example__list stats">
             <div class="stats__item">
               <dt class="stats__number">5 кг</dt>
               <dd class="stats__description">Снижение веса</dd>
@@ -99,16 +101,16 @@
             <b>Затраты на питание: </b>
             <b>15 000 руб.</b>
           </div>
-          <div class="visibility-example">
-            <div class="visibility-example__img">
-              <img class="visibility-example__img--before" src="../source/img/fat_cat_before.png" alt="Каким был Ваш кот." width="280" height="232">
-              <img class="visibility-example__img--after" src="../source/img/thin_cat_after.png" alt="Каким стал Ваш кот." width="243" height="232">
+          <div class="effect">
+            <div class="effect__photos">
+              <img class="effect__photo effect__photo--before" src="../source/img/cat_fat.png" alt="Каким был Ваш кот." width="280" height="232">
+              <img class="effect__photo effect__photo--after" src="../source/img/cat_thin.png" alt="Каким стал Ваш кот." width="243" height="232">
             </div>
-            <div class="visibility-example__slider">
-              <button class="visibility-example__button">Было</button>
+            <div class="effect__slider">
+              <button class="effect__button">Было</button>
               <label for="switch"></label>
-              <input class="visibility-example__toggle" id="switch" type="range" name="range">
-              <button class="visibility-example__button">Стало</button>
+              <input class="effect__toggle" id="switch" type="range" name="range">
+              <button class="effect__button">Стало</button>
             </div>
           </div>
         </div>
@@ -129,20 +131,20 @@
         <svg class="footer__logo-name" width="128" height="24"><use></use></svg>
         <ul class="footer__social social-list">
           <li class="social-list__item">
-            <h4 class="visually-hidden">Вконтакте</h4>
             <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
               <svg class="social-list__icon" width="23" height="16"><use></use></svg>
             </a>
           </li>
           <li class="social-list__item">
-            <h4 class="visually-hidden">Инстаграм</h4>
             <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/htmlacademy">
+              <span class="visually-hidden">Инстаграм</span>
               <svg class="social-list__icon" width="16" height="16"><use></use></svg>
             </a>
           </li>
           <li class="social-list__item">
-            <h4 class="visually-hidden">Фейсбук</h4>
             <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Фейсбук</span>
               <svg class="social-list__icon" width="22" height="22"><use></use></svg>
             </a>
           </li>
