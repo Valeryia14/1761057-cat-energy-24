@@ -18,13 +18,13 @@
         <div class="wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Каталог продукции</a>
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link " href="#">Подбор программы</a>
+              <a class="main-nav__link " href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -41,15 +41,16 @@
           программу питания для вашего кота</p>
 
         <form class="form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="form__general-info ">
+          <fieldset class="form__general-info">
+            <legend class="visually-hidden">Общие сведения</legend>
             <ul class="general-list">
               <li class="general-list__item">
                 <label class="general-list__label label" for="nickname">Имя:*</label>
-                <input class="general-list__input" type="text" name="name" id="nickname" placeholder="Барсик">
+                <input class="general-list__input" type="text" name="name" id="nickname" placeholder="Барсик" required>
               </li>
               <li class="general-list__item">
                 <label class="general-list__label label" for="weight">Вес (кг):*</label>
-                <input class="general-list__input" type="number" name="heft" id="weight" placeholder="7">
+                <input class="general-list__input" type="number" name="heft" id="weight" placeholder="7" required>
               </li>
               <li class="general-list__item">
                 <label class="general-list__label label" for="age">Возраст (лет):</label>
@@ -59,20 +60,18 @@
           </fieldset>
 
           <fieldset class="form__choice">
+            <legend class="visually-hidden">Выбор программы</legend>
             <ul class="choice-list">
               <li class="choice-list__item">
                 <input class="choice-list__input" type="radio" name="options" id="slim" value="slimming" checked>
-                <span class="choice-list__mark"></span>
                 <label class="choice-list__label label" for="slim">Похудение</label>
               </li>
               <li class="choice-list__item">
                 <input class="choice-list__input" type="radio" name="options" id="fatten" value="plump">
-                <span class="choice-list__mark"></span>
                 <label class="choice-list__label label" for="fatten">Набор массы</label>
               </li>
               <li class="choice-list__item">
                 <input class="choice-list__input" type="radio" name="options" id="hint" value="advice">
-                <span class="choice-list__mark"></span>
                 <label class="choice-list__label label" for="hint">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
@@ -83,11 +82,13 @@
             <ul class="contacts-list">
               <li class="contacts-list__item">
                 <label class="contacts-list__label label" for="e-mail">E-mail:*</label>
-                <input class="contacts-list__input" type="email" name="email" id="e-mail" placeholder="kuklachev@gmail.com">
+                <input class="contacts-list__input" type="email" name="email" id="e-mail" placeholder="kuklachev@gmail.com" required>
+                <span class="contacts__icon contacts__icon--icon_letter"></span>
               </li>
               <li class="contacts-list__item">
                 <label class="contacts-list__label label" for="phone">Телефон:*</label>
-                <input class="contacts-list__input" type="tel" name="telephone" id="phone" placeholder="8 (960) 900-60-90">
+                <input class="contacts-list__input" type="tel" name="telephone" id="phone" placeholder="8 (960) 900-60-90" required>
+                <span class="contacts__icon contacts__icon--icon_phone"></span>
               </li>
             </ul>
           </fieldset>
@@ -102,23 +103,19 @@
             <legend class="extra-legend legend">Дополнительно</legend>
             <ul class="extra-list">
               <li class="extra-list__item">
-                <input class="extra-list__input" type="checkbox" name="sweetener" id="sweet" checked>
-                <span class="extra-list__mark"></span>
+                <input class="extra-list__input" type="checkbox" name="additionally" id="sweet" value="sweetener" checked>
                 <label class="extra-list__label" for="sweet">Сахарозаменитель</label>
               </li>
               <li class="extra-list__item">
-                <input class="extra-list__input" type="checkbox" name="drinking-water" id="water">
-                <span class="extra-list__mark"></span>
+                <input class="extra-list__input" type="checkbox" name="additionally" id="water" value="drinking-water">
                 <label class="extra-list__label" for="water">Питьевая вода</label>
               </li>
               <li class="extra-list__item">
-                <input class="extra-list__input" type="checkbox" name="milk" id="cat-milk">
-                <span class="extra-list__mark"></span>
+                <input class="extra-list__input" type="checkbox" name="additionally" id="cat-milk" value="milk">
                 <label class="extra-list__label" for="cat-milk">Молоко</label>
               </li>
               <li class="extra-list__item">
-                <input class="extra-list__input" type="checkbox" name="vitamins" id="vitamine">
-                <span class="extra-list__mark"></span>
+                <input class="extra-list__input" type="checkbox" name="additionally" id="vitamine" value="vitamins">
                 <label class="extra-list__label" for="vitamine">Витамины</label>
               </li>
             </ul>
