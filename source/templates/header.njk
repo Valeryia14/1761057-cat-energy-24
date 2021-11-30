@@ -1,0 +1,30 @@
+<header class="header">
+  <div class="header-wrapper">
+    <a class="header-logo" href="index.html">
+      <svg class="header-logo__img" width="34" height="38"><use></use></svg>
+      <svg class="header-logo__name" width="101" height="18"><use></use></svg>
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" hidden type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="wrapper">
+        <ul class="main-nav__list">
+          {% for page in pages %}
+            <li class="main-nav__item">
+              <a
+                class="main-nav__link"
+                href="{{ page.path }}"
+                {% if permalink === page.path %}
+                  aria-current="page"
+                {% endif %}
+              >{{ page.name }}</a>
+            </li>
+          {% else %}
+            <li>Из навигации пропали все пункты 😕</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
