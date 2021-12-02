@@ -1,0 +1,34 @@
+.example {
+  background-color: #eaeaea;
+}
+
+.example__chapter {
+  padding: 25px 0 40px;
+
+  @media (--wide-vp) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (--wide-vp) {
+  .example__feature {
+    max-width: 440px;
+  }
+}
+
+.example__title {
+  font-size: var(--title-size);
+  line-height: 40px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.example__description {
+  margin: 0 0 35px 0;
+}
+
+.example__list {
+  margin: 0;
+}

@@ -1,0 +1,33 @@
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (--middle-vp) {
+    grid-template-columns: 162px 162px 1fr;
+    gap: 0 42px;
+  }
+}
+
+.stats__item {
+  margin-bottom: 20px;
+}
+
+.stats__item:last-child {
+  margin-bottom: 40px;
+}
+
+.stats__description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0;
+}
+
+.stats__number {
+  font-family: var(--accent-font);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--accent-text-color);
+  margin-bottom: 8px;
+}

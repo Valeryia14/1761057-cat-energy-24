@@ -1,8 +1,10 @@
 .button {
   font-family: var(--accent-font);
+  font-weight: 400;
+  color: var(--action-color);
+  background-color: var(--main-bg-color);
   width: fit-content;
-
-  &--size_wide {
-    width: 100%;
-  }
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
 }

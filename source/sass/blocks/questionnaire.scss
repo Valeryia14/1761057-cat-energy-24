@@ -1,0 +1,23 @@
+.questionnaire__chapter {
+  margin-bottom: 32px;
+}
+
+.questionnaire__title {
+  font-size: var(--title-size);
+  line-height: 36px;
+  margin-bottom: 37px;
+}
+
+.questionnaire__description {
+  font-family: var(--accent-font);
+  color: var(--accent-text-color);
+  text-transform: uppercase;
+  margin-bottom: 39px;
+}
+
+.questionnaire__footnote {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 32px;
+}

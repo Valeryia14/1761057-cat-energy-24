@@ -1,0 +1,29 @@
+.location {
+  background-color: var(--accent-bg-color);
+  padding: 26px 0;
+
+  &--main_background {
+    background-color: var(--action-color);
+  }
+}
+
+.location__chapter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location__suggestion {
+  font-family: var(--accent-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  padding: 0;
+  margin: 0 10px 0 0;
+  text-transform: uppercase;
+
+  @media (--middle-vp) {
+    line-height: 26px;
+    max-width: 177px;
+  }
+}

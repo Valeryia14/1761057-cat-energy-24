@@ -1,0 +1,14 @@
+@media --middle-vp {
+  .extra-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.extra-list__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.extra-list__label {
+  color: var(--accent-text-color);
+}
