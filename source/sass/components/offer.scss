@@ -1,0 +1,32 @@
+.offer {
+  background-color: rgba(104, 183, 56, 0,85);
+  margin-bottom: 20px;
+}
+
+.offer__title,
+.offer__text,
+.offer__button {
+  font-family: "Oswald", "Impact", sans-serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+.offer__title {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.offer__text {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-bottom: 49px;
+}
+
+.offer__button {
+  font-size: 14px;
+  line-height: 18px;
+}

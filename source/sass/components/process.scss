@@ -1,0 +1,23 @@
+.process {
+  margin-bottom: 49px;
+}
+
+.process__title {
+  font-family: "Oswald", "Impact", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.process__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.process__item:not(:last-child) {
+  margin-bottom: 24px;
+}

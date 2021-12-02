@@ -1,3 +1,13 @@
 @import "./global/fonts.scss";
+
+/*Blocks*/
 @import "./blocks/page.scss";
 @import "./blocks/button.scss";
+@import "./blocks/description.scss";
+
+/*Components*/
+@import "./components/offer.scss";
+@import "./components/options.scss";
+@import "./components/process.scss";
+@import "./components/example.scss";
+@import "./components/location.scss";

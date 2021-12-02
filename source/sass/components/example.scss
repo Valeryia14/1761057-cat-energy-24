@@ -1,0 +1,45 @@
+.example {
+  background-color: #EAEAEA;
+  padding: 25px 0 40px;
+}
+
+.example__title {
+  font-family: "Oswald", "Impact", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.example__description {
+  margin-bottom: 20px;
+}
+
+.example__list {
+  margin: 0;
+}
+
+.stats__item {
+  margin-bottom: 20px;
+}
+
+.stats__item:last-child {
+  margin-bottom: 40px;
+}
+
+.stats__description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+}
+
+.stats__number {
+  font-family: "Oswald", "Impact", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
