@@ -1,5 +1,4 @@
 .options {
-  background: rgba(104, 183, 56, 0,85) url("/./img/catenergy_box.png") no-repeat;
   margin-bottom: 20px;
 }
 
@@ -20,9 +19,9 @@
 }
 
 .options__title {
-  font-family: "Oswald", "Impact", sans-serif;
+  font-family: var(--accent-font);
   font-weight: 400;
-  font-size: 24px;
+  font-size: var(--inner-title-size);
   line-height: 37px;
   text-transform: uppercase;
   padding: 0;
@@ -35,7 +34,7 @@
 }
 
 .options__link {
-  font-family: "Oswald", "Impact", sans-serif;
+  font-family: var(--accent-font);
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;

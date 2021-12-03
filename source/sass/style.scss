@@ -1,13 +1,21 @@
 @import "./global/fonts.scss";
-
-/*Blocks*/
 @import "./blocks/page.scss";
 @import "./blocks/button.scss";
 @import "./blocks/description.scss";
 
-/*Components*/
-@import "./components/offer.scss";
-@import "./components/options.scss";
-@import "./components/process.scss";
-@import "./components/example.scss";
-@import "./components/location.scss";
+/*Index*/
+@import "./blocks/offer.scss";
+@import "./blocks/options.scss";
+@import "./blocks/process.scss";
+@import "./blocks/example.scss";
+@import "./blocks/location.scss";
+
+/*Form*/
+@import "./blocks/questionnaire.scss";
+@import "./blocks/form.scss";
+
+/*Catalog*/
+@import "./blocks/main-inner.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/add-goods.scss";
+@import "./blocks/present.scss";

@@ -17,9 +17,9 @@
           программу питания для вашего кота</p>
 
         <form class="form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="form__general-info">
+          <fieldset class="form__general-info field">
             <legend class="visually-hidden">Общие сведения</legend>
-            <ul class="general-list">
+            <ul class="general-list form-list">
               <li class="general-list__item">
                 <label class="general-list__label label" for="nickname">Имя:*</label>
                 <input class="general-list__input" type="text" name="name" id="nickname" placeholder="Барсик" required>
@@ -35,9 +35,9 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__choice">
+          <fieldset class="form__choice field">
             <legend class="visually-hidden">Выбор программы</legend>
-            <ul class="choice-list">
+            <ul class="choice-list form-list">
               <li class="choice-list__item">
                 <input class="choice-list__input" type="radio" name="options" id="slim" value="slimming" checked>
                 <label class="choice-list__label label" for="slim">Похудение</label>
@@ -53,9 +53,9 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__contacts">
+          <fieldset class="form__contacts field">
             <legend class="contacts-legend legend">Контактные данные (владельца кота)</legend>
-            <ul class="contacts-list">
+            <ul class="contacts-list form-list">
               <li class="contacts-list__item">
                 <label class="contacts-list__label label" for="e-mail">E-mail:*</label>
                 <input class="contacts-list__input" type="email" name="email" id="e-mail" placeholder="kuklachev@gmail.com" required>
@@ -71,27 +71,27 @@
 
           <div class="comment">
             <label class="comment-legend legend" for="note">Комментарий</label>
-            <textarea name="remark" id="note" cols="35" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="comment__text" name="remark" id="note" cols="35" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
 
-          <fieldset class="form__extra">
+          <fieldset class="form__extra field">
             <legend class="extra-legend legend">Дополнительно</legend>
-            <ul class="extra-list">
+            <ul class="extra-list form-list">
               <li class="extra-list__item">
                 <input class="extra-list__input" type="checkbox" name="additionally" id="sweet" value="sweetener" checked>
-                <label class="extra-list__label" for="sweet">Сахарозаменитель</label>
+                <label class="extra-list__label label" for="sweet">Сахарозаменитель</label>
               </li>
               <li class="extra-list__item">
                 <input class="extra-list__input" type="checkbox" name="additionally" id="water" value="drinking-water">
-                <label class="extra-list__label" for="water">Питьевая вода</label>
+                <label class="extra-list__label label" for="water">Питьевая вода</label>
               </li>
               <li class="extra-list__item">
                 <input class="extra-list__input" type="checkbox" name="additionally" id="cat-milk" value="milk">
-                <label class="extra-list__label" for="cat-milk">Молоко</label>
+                <label class="extra-list__label label" for="cat-milk">Молоко</label>
               </li>
               <li class="extra-list__item">
                 <input class="extra-list__input" type="checkbox" name="additionally" id="vitamine" value="vitamins">
-                <label class="extra-list__label" for="vitamine">Витамины</label>
+                <label class="extra-list__label label" for="vitamine">Витамины</label>
               </li>
             </ul>
           </fieldset>

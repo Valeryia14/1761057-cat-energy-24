@@ -1,8 +1,19 @@
 .description {
   font-weight: 400;
-  font-size: 14px;
+  font-size: var(--description-size);
   line-height: 18px;
-  color: #444444;
+  color: var(--description-color);
   padding: 0;
   margin: 0;
+}
+
+:root {
+  --description-size: 14px;
+  --inner-title-size: 24px;
+  --title-size: 36px;
+}
+
+:root {
+  --description-color: #444444;
+  --background-color: #68B738;
 }
