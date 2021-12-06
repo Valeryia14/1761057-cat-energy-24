@@ -1,11 +1,5 @@
-.field {
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
 .form__general-info {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .form-list {
@@ -14,22 +8,8 @@
   list-style: none;
 }
 
-.general-list__item:not(:last-child),
-.choice-list__item:not(:last-child),
-.extra-list__item:not(:last-child) {
+.general-list__item:not(:last-child) {
   margin-bottom: 12px;
-}
-
-.label,
-.general-list__input::placeholder,
-.contacts-list__input::placeholder,
-.comment__text::placeholder {
-  font-family: var(--accent-font);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: var(--description-color);
-  text-transform: uppercase;
 }
 
 .general-list__label {
@@ -40,22 +20,24 @@
   margin-bottom: 45px;
 }
 
-.choice-list__label,
+.choice-list__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.choice-list__label {
+  color: var(--additional-text-color);
+}
+
+.extra-list__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
 .extra-list__label {
-  color: #222222;
+  color: var(--accent-text-color);
 }
 
-.form__contacts,
-.comment {
+.form__contacts {
   margin-bottom: 23px;
-}
-
-.legend {
-  font-family: var(--accent-font);
-  font-weight: 400;
-  font-size: var(--inner-title-size);
-  line-height: 26px;
-  display: block;
 }
 
 .contacts-legend {
@@ -66,22 +48,14 @@
   margin-bottom: 14px;
 }
 
-.comment-legend {
-  margin-bottom: 38px;
+.form__extra {
+  margin-bottom: 34px;
 }
 
-.form__extra,
 .extra-legend {
   margin-bottom: 34px;
 }
 
 .form__button {
   margin-bottom: 21px;
-}
-
-.questionnaire__footnote {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  margin-bottom: 32px;
 }

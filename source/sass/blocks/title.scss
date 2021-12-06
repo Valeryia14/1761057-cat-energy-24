@@ -1,0 +1,10 @@
+.title {
+  --title-size: 36px;
+  --inner-title-size: 24px;
+
+  font-family: var(--accent-font);
+  font-weight: 400;
+  color: var(--accent-text-color);
+  padding: 0;
+  margin: 0;
+}

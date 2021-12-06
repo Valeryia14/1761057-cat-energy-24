@@ -1,21 +1,26 @@
 @import "./global/fonts.scss";
+@import "./global/colors.scss";
 @import "./blocks/page.scss";
 @import "./blocks/button.scss";
+@import "./blocks/field.scss";
+@import "./blocks/legend.scss";
+@import "./blocks/label.scss";
+@import "./blocks/input.scss";
+@import "./blocks/title.scss";
 @import "./blocks/description.scss";
-
-/*Index*/
 @import "./blocks/offer.scss";
 @import "./blocks/options.scss";
 @import "./blocks/process.scss";
 @import "./blocks/example.scss";
+@import "./blocks/stats.scss";
 @import "./blocks/location.scss";
-
-/*Form*/
+@import "./blocks/address.scss";
 @import "./blocks/questionnaire.scss";
 @import "./blocks/form.scss";
-
-/*Catalog*/
+@import "./blocks/comment.scss";
 @import "./blocks/main-inner.scss";
 @import "./blocks/catalog.scss";
+@import "./blocks/table.scss";
 @import "./blocks/add-goods.scss";
+@import "./blocks/add-table.scss";
 @import "./blocks/present.scss";

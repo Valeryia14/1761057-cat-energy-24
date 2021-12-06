@@ -1,29 +1,25 @@
 .offer {
   height: 100%;
-  background:  linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 0% 63%,#ffffff 63% 100%),
-  url("../../img/main_bg.jpg") no-repeat;
+  background:
+    linear-gradient(
+    rgba(104, 183, 56, 0.85) 0% 63%,
+    #ffffff 63% 100%
+    ),
+    url("../../img/main_bg.jpg") no-repeat;
   margin-bottom: 20px;
-}
-
-.offer__title,
-.offer__text,
-.offer__button {
-  font-family: var(--accent-font);
-  font-weight: 400;
-  color: #ffffff;
-  padding: 0;
-  margin: 0;
 }
 
 .offer__title {
   font-size: var(--title-size);
   line-height: 36px;
-  text-transform: uppercase;
+  color: var(--action-color);
   margin-bottom: 25px;
 }
 
 .offer__text {
+  font-family: var(--accent-font);
   line-height: 14px;
+  color: var(--action-color);
   text-transform: uppercase;
   margin-bottom: 49px;
 }

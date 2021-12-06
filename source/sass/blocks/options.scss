@@ -1,31 +1,19 @@
-.options {
-  margin-bottom: 20px;
-}
-
 .options__list {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .options__item {
-  padding: 21px 20px 18px 19px;
+  padding: 21px 33px 18px 19px;
+  background-color: var(--accent-bg-color);
   margin-bottom: 20px;
-  background-color: #F2F2F2;
-}
-
-.options__item:last-child {
-  margin-bottom: 0;
 }
 
 .options__title {
-  font-family: var(--accent-font);
-  font-weight: 400;
   font-size: var(--inner-title-size);
   line-height: 37px;
   text-transform: uppercase;
-  padding: 0;
-  margin: 0;
   margin-bottom: 29px;
 }
 
@@ -38,9 +26,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #000000;
+  color: var(--additional-text-color);
   text-transform: uppercase;
   text-decoration: none;
 }
-
-

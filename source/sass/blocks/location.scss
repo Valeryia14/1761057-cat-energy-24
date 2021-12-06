@@ -1,5 +1,10 @@
 .location {
-  padding: 28px 0 26px;
+  background-color: var(--accent-bg-color);
+  padding: 26px 0;
+
+  &--main_background {
+    background-color: var(--action-color);
+  }
 }
 
 .location__suggestion {
@@ -12,9 +17,3 @@
   margin: 0;
   text-transform: uppercase;
 }
-
-.address {
-  line-height: 20px;
-  font-style: normal;
-}
-

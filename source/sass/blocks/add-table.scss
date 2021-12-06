@@ -1,0 +1,16 @@
+.add-table__title {
+  font-family: var(--accent-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--additional-text-color);
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
+.add-table__cell {
+  font-weight: 400;
+  font-size: var(--description-size);
+  line-height: 14px;
+  margin-bottom: 15px;
+}
