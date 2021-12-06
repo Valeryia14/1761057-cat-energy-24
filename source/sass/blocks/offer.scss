@@ -6,6 +6,9 @@
     #ffffff 63% 100%
     ),
     url("../../img/main_bg.jpg") no-repeat;
+}
+
+.offer__chapter {
   margin-bottom: 20px;
 }
 
@@ -13,6 +16,8 @@
   font-size: var(--title-size);
   line-height: 36px;
   color: var(--action-color);
+  padding: 0;
+  margin: 0;
   margin-bottom: 25px;
 }
 
@@ -21,10 +26,14 @@
   line-height: 14px;
   color: var(--action-color);
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
   margin-bottom: 49px;
 }
 
 .offer__button {
   font-size: 14px;
   line-height: 18px;
+  padding: 0;
+  margin: 0;
 }

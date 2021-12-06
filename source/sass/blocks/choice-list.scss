@@ -1,0 +1,7 @@
+.choice-list__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.choice-list__label {
+  color: var(--additional-text-color);
+}
