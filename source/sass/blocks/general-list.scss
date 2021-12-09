@@ -1,3 +1,7 @@
+.general-list__item {
+  display: flex;
+}
+
 .general-list__item:not(:last-child) {
   margin-bottom: 12px;
 }

@@ -4,6 +4,17 @@
 
 .example__chapter {
   padding: 25px 0 40px;
+
+  @media (--wide-vp) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (--wide-vp) {
+  .example__feature {
+    max-width: 440px;
+  }
 }
 
 .example__title {
@@ -15,8 +26,7 @@
 }
 
 .example__description {
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 35px 0;
 }
 
 .example__list {

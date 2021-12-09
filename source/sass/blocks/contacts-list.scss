@@ -1,3 +1,11 @@
+.contacts-list__item {
+  display: flex;
+}
+
 .contacts-list__item:not(:last-child) {
   margin-bottom: 14px;
+}
+
+.contacts-list__label {
+  margin-right: 14px;
 }

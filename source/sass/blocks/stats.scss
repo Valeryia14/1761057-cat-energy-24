@@ -1,3 +1,13 @@
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (--middle-vp) {
+    grid-template-columns: 162px 162px 1fr;
+    gap: 0 42px;
+  }
+}
+
 .stats__item {
   margin-bottom: 20px;
 }

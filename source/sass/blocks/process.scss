@@ -14,6 +14,18 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (--middle-vp) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 60px;
+  }
+
+  @media (--wide-vp) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 80px;
+  }
 }
 
 .process__item:not(:last-child) {
