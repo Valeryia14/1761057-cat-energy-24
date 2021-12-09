@@ -10,11 +10,25 @@
 .page__centerer {
   margin: 0 20px;
 
+  &--form_padding {
+    padding: 0 40px;
+  }
+
+  &--nav-menu_position {
+    display: flex;
+    padding-top: 42px;
+  }
+
+  &--footer_position {
+    display: flex;
+  }
+
   @media (--middle-vp) {
     margin: 0 30px;
   }
 
   @media (--wide-vp) {
-    margin: 0 110px;
+    margin: 0 auto;
+    width: 1220px;
   }
 }
