@@ -16,6 +16,8 @@
 
   @media (--wide-vp) {
     position: static;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding-left: 80px;
     margin-bottom: 80px;
     background: none;
@@ -70,12 +72,12 @@
   }
 
   @media (--wide-vp) {
-    position: absolute;
-    top: 15%;
-    left: 56%;
-    transform: translateX(-51%);
-    width: 448px;
-    height: 426px;
+    position: relative;
+    transform: translateX(0);
+    width: 552px;
+    height: 499px;
+    top: 40px;
+    left: -205px;
     background-size: cover;
   }
 }
