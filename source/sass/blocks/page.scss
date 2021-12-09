@@ -10,6 +10,10 @@
 .page__centerer {
   margin: 0 20px;
 
+  &--form_padding {
+    padding: 0 40px;
+  }
+
   @media (--middle-vp) {
     margin: 0 30px;
   }
