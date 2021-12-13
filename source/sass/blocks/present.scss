@@ -1,5 +1,19 @@
 .present {
-  background: rgba(104, 183, 56, 0.85) url("../../img/main_bg.jpg") no-repeat center;
+  min-height: 290px;
+}
+
+.present::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  min-height: 290px;
+  background:
+    linear-gradient(
+    rgba(104, 183, 56, 0.85),
+    rgba(104, 183, 56, 0.85)),
+    url("../../img/cat_case.jpg") no-repeat center;
+  background-size: cover;
+  z-index: -1;
 }
 
 .present__chapter {
@@ -11,6 +25,8 @@
   font-size: 16px;
   line-height: 20px;
   color: var(--action-color);
+  text-align: center;
+  max-width: 161px;
   padding: 0;
   margin: 0;
 }

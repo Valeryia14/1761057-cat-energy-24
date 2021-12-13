@@ -18,44 +18,46 @@
             программу питания для вашего кота</p>
 
           <form class="form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="form__general-info form__indent field">
-              <legend class="visually-hidden">Общие сведения</legend>
-              <ul class="general-list form__list">
-                <li class="general-list__item">
-                  <label class="general-list__label label" for="nickname">Имя:*</label>
-                  <input class="general-list__input input" type="text" name="name" id="nickname" placeholder="Барсик" required>
-                </li>
-                <li class="general-list__item">
-                  <label class="general-list__label label" for="weight">Вес (кг):*</label>
-                  <input class="general-list__input input" type="number" name="heft" id="weight" placeholder="7" required>
-                </li>
-                <li class="general-list__item">
-                  <label class="general-list__label label" for="age">Возраст (лет):</label>
-                  <input class="general-list__input input" type="number" name="years" id="age" placeholder="7">
-                </li>
-              </ul>
-            </fieldset>
+            <div class="form__info-wrapper">
+              <fieldset class="form__general-info form__indent field">
+                <legend class="visually-hidden">Общие сведения</legend>
+                <ul class="general-list form__list">
+                  <li class="general-list__item">
+                    <label class="general-list__label label" for="nickname">Имя:*</label>
+                    <input class="general-list__input input" type="text" name="name" id="nickname" placeholder="Барсик" required>
+                  </li>
+                  <li class="general-list__item">
+                    <label class="general-list__label label" for="weight">Вес (кг):*</label>
+                    <input class="general-list__input input" type="number" name="heft" id="weight" placeholder="7" required>
+                  </li>
+                  <li class="general-list__item">
+                    <label class="general-list__label label" for="age">Возраст (лет):</label>
+                    <input class="general-list__input input" type="number" name="years" id="age" placeholder="7">
+                  </li>
+                </ul>
+              </fieldset>
 
-            <fieldset class="form__choice form__indent field">
-              <legend class="visually-hidden">Выбор программы</legend>
-              <ul class="choice-list form__list">
-                <li class="choice-list__item">
-                  <input class="choice-list__input" type="radio" name="options" id="slim" value="slimming" checked>
-                  <label class="choice-list__label label" for="slim">Похудение</label>
-                </li>
-                <li class="choice-list__item">
-                  <input class="choice-list__input" type="radio" name="options" id="fatten" value="plump">
-                  <label class="choice-list__label label" for="fatten">Набор массы</label>
-                </li>
-                <li class="choice-list__item">
-                  <input class="choice-list__input" type="radio" name="options" id="hint" value="advice">
-                  <label class="choice-list__label label" for="hint">Не знаю (нужен ваш совет)</label>
-                </li>
-              </ul>
-            </fieldset>
+              <fieldset class="form__choice form__indent field">
+                <legend class="visually-hidden">Выбор программы</legend>
+                <ul class="choice-list form__list">
+                  <li class="choice-list__item">
+                    <input class="choice-list__input" type="radio" name="options" id="slim" value="slimming" checked>
+                    <label class="choice-list__label label" for="slim">Похудение</label>
+                  </li>
+                  <li class="choice-list__item">
+                    <input class="choice-list__input" type="radio" name="options" id="fatten" value="plump">
+                    <label class="choice-list__label label" for="fatten">Набор массы</label>
+                  </li>
+                  <li class="choice-list__item">
+                    <input class="choice-list__input" type="radio" name="options" id="hint" value="advice">
+                    <label class="choice-list__label label" for="hint">Не знаю (нужен ваш совет)</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
 
             <fieldset class="form__contacts form__indent field">
-              <legend class="field__contacts-legend legend">Контактные данные (владельца кота)</legend>
+              <legend class="field__contacts-legend legend title">Контактные данные (владельца кота)</legend>
               <ul class="contacts-list form__list">
                 <li class="contacts-list__item">
                   <label class="contacts-list__label label" for="e-mail">E-mail:*</label>
@@ -72,13 +74,13 @@
 
             <section class="comment">
               <div class="comment__chapter">
-                <label class="comment__legend legend" for="note">Комментарий</label>
+                <label class="comment__legend legend title" for="note">Комментарий</label>
                 <textarea class="comment__text input" name="remark" id="note" cols="35" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </section>
 
             <fieldset class="form__extra form__indent field">
-              <legend class="field__extra-legend legend">Дополнительно</legend>
+              <legend class="field__extra-legend legend title">Дополнительно</legend>
               <ul class="extra-list form__list">
                 <li class="extra-list__item">
                   <input class="extra-list__input" type="checkbox" name="additionally" id="sweet" value="sweetener" checked>
@@ -98,19 +100,13 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button form__button" type="submit">Отправить заявку</button>
+            <div class="form__result">
+              <button class="button form__button" type="submit">Отправить заявку</button>
+              <div class="form__footnote">* — Обязательные поля</div>
+            </div>
           </form>
-          <span class="questionnaire__footnote">* — Обязательные поля</span>
         </div>
       </div>
-    </section>
-
-    <section class="location">
-      <div class="wrapper">
-        <p class="location__suggestion">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="address description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      </div>
-      <div class="map"></div>
     </section>
   </main>
 

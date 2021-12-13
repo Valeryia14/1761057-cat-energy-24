@@ -5,11 +5,26 @@
   &--main_background {
     background-color: var(--action-color);
   }
+
+  @media (--wide-vp) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 80px;
+  }
 }
 
 .location__chapter {
   display: flex;
   justify-content: space-between;
+
+  @media (--middle-vp) {
+    padding: 0 40px;
+  }
+
+  @media (--wide-vp) {
+    display: grid;
+    gap: 0 80px;
+  }
 }
 
 .location__suggestion {
@@ -25,5 +40,10 @@
   @media (--middle-vp) {
     line-height: 26px;
     max-width: 177px;
+  }
+
+  @media (--wide-vp) {
+    padding: 56px 0 56px 80px;
+    margin: 0;
   }
 }

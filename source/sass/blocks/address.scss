@@ -1,4 +1,15 @@
 .address {
   line-height: 20px;
   font-style: normal;
+
+  @media (--not-small-vp) {
+    max-width: 160px;
+    text-align: right;
+  }
+
+  @media (--wide-vp) {
+    grid-column: 2 / 3;
+    text-align: left;
+    padding: 56px 80px 56px 0;
+  }
 }

@@ -1,7 +1,13 @@
-@media (--middle-vp) {
-  .extra-list {
+.extra-list {
+  @media (--not-small-vp) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 32px 60px;
+  }
+
+  @media (--wide-vp) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 80px;
   }
 }
 
@@ -11,4 +17,9 @@
 
 .extra-list__label {
   color: var(--accent-text-color);
+
+  @media (--not-small-vp) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

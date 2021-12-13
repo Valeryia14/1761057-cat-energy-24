@@ -5,4 +5,9 @@
   line-height: 26px;
   color: var(--accent-text-color);
   display: block;
+
+  @media (--not-small-vp) {
+    font-size: var(--title-size);
+    line-height: 36px;
+  }
 }

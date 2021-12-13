@@ -1,3 +1,11 @@
+.contacts-list {
+  @media (--wide-vp) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 80px;
+  }
+}
+
 .contacts-list__item {
   display: flex;
 }

@@ -11,7 +11,9 @@
   margin: 0 20px;
 
   &--form_padding {
-    padding: 0 40px;
+    @media (--middle-vp) {
+      padding: 0 40px;
+    }
   }
 
   &--nav-menu_position {
@@ -21,6 +23,7 @@
 
   &--footer_position {
     display: flex;
+    flex-direction: column;
   }
 
   @media (--middle-vp) {

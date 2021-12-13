@@ -5,6 +5,8 @@
 .questionnaire__title {
   font-size: var(--title-size);
   line-height: 36px;
+  padding: 0;
+  margin: 0;
   margin-bottom: 37px;
 }
 
@@ -13,11 +15,4 @@
   color: var(--accent-text-color);
   text-transform: uppercase;
   margin-bottom: 39px;
-}
-
-.questionnaire__footnote {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  margin-bottom: 32px;
 }

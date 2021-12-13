@@ -1,3 +1,9 @@
 .catalog__table {
+  display: grid;
   margin-bottom: 50px;
+}
+
+.catalog__button {
+  display: block;
+  width: 100%;
 }
