@@ -1,6 +1,26 @@
+.add-goods__wrapper {
+  @media (--wide-vp) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 80px;
+  }
+}
+
+.add-goods__title {
+  @media (--not-small-vp) {
+    font-size: var(--title-size);
+    margin-bottom: 80px;
+  }
+}
+
 .add-goods__table {
   display: grid;
   grid-template-columns: 1fr;
+
+  @media (--wide-vp) {
+    grid-column: 1 / 4;
+    margin-bottom: 0;
+  }
 }
 
 .add-table__line {

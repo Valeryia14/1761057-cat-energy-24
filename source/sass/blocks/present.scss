@@ -1,5 +1,10 @@
 .present {
   min-height: 290px;
+  position: relative;
+
+  @media (--wide-vp) {
+    grid-column: 4 / 5;
+  }
 }
 
 .present::before {
