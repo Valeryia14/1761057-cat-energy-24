@@ -117,6 +117,12 @@
       margin-right: 0;
     }
   }
+
+  @media (--wide-vp) {
+    &--link_color .main-nav__link {
+      color: var(--accent-text-color);
+    }
+  }
 }
 
 .main-nav__link {
