@@ -1,15 +1,18 @@
 .location {
-  background-color: var(--accent-bg-color);
   padding: 26px 0;
 
-  &--main_background {
-    background-color: var(--action-color);
+  @media (--middle-vp) {
+    padding: 56px 40px;
   }
 
   @media (--wide-vp) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 245px 245px;
     gap: 0 80px;
+    position: absolute;
+    background-color: var(--action-color);
+    padding: 0;
+    margin-top: 97px;
   }
 }
 
@@ -17,12 +20,9 @@
   display: flex;
   justify-content: space-between;
 
-  @media (--middle-vp) {
-    padding: 0 40px;
-  }
-
   @media (--wide-vp) {
     display: grid;
+    grid-template-columns: 245px 245px;
     gap: 0 80px;
   }
 }
@@ -37,13 +37,14 @@
   margin: 0 10px 0 0;
   text-transform: uppercase;
 
-  @media (--middle-vp) {
+  @media (--not-small-vp) {
+    font-size: 20px;
     line-height: 26px;
     max-width: 177px;
   }
 
   @media (--wide-vp) {
-    padding: 56px 0 56px 80px;
+    padding: 54px 0 58px 80px;
     margin: 0;
   }
 }

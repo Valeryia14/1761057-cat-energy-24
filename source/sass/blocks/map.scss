@@ -1,0 +1,11 @@
+.map iframe {
+  display: block;
+  border: none;
+  z-index: -1;
+}
+
+iframe {
+  @media (--not-small-vp) {
+    height: 400px;
+  }
+}

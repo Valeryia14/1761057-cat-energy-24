@@ -1,16 +1,146 @@
+.main-nav {
+  position: relative;
+  min-height: 65px;
+  width: auto;
+}
+
+// Временно, для отображения меню на странице.
+// Позже заменю на svg ;)
+.main-nav__toggle {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 20px;
+  z-index: 2;
+  width: 24px;
+  height: 37px;
+  background-color: var(--action-color);
+  padding: 0;
+  cursor: pointer;
+  border: none;
+
+  @media (--not-small-vp) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: var(--accent-text-color);
+  box-shadow:
+    0 7px 0 0 var(--accent-text-color),
+    0 14px 0 0 var(--accent-text-color);
+}
+
+.main-nav--opened .main-nav__toggle {
+  content: "";
+  top: 0;
+  right: 20px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: var(--accent-text-color);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (--small-vp) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    min-height: 50vh;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    padding-top: 65px;
+  }
+}
+
 .main-nav__list {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
+  background-color: var(--action-color);
+
+  @media (--not-small-vp) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-color: transparent;
+  }
 }
 
-.main-nav__item:not(:last-child) {
-  margin-right: 34px;
+.main-nav__item {
+  @media (--small-vp) {
+    border-top: 1px solid #e6e6e6;
+
+    &:last-child {
+      border-bottom: 1px solid #e6e6e6;
+    }
+  }
+
+  @media (--not-small-vp) {
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .main-nav__link {
   font-family: var(--accent-font);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--accent-text-color);
+  position: relative;
+  display: block;
+  padding: 22px 10px 24px;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
+
+  @media (--not-small-vp) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (--wide-vp) {
+    color: var(--action-color);
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

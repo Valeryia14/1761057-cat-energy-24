@@ -3,6 +3,7 @@
   font-style: normal;
 
   @media (--not-small-vp) {
+    font-size: var(--description-size-large);
     max-width: 160px;
     text-align: right;
   }

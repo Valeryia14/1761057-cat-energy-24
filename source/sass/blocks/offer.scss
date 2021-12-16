@@ -50,6 +50,7 @@
     background-size: contain;
     background-position: top 0 left 180px;
     left: 50%;
+    z-index: -1;
   }
 }
 
@@ -109,22 +110,22 @@
 
   @media (--not-small-vp) {
     font-size: var(--title-big-size);
-    line-height: 60px;
+    line-height: 1;
     color: var(--accent-text-color);
     text-align: left;
-    padding-top: 62px;
+    padding-top: 63px;
     margin-bottom: 41px;
   }
 
   @media (--wide-vp) {
-    padding-top: 114px;
+    padding-top: 111px;
     margin-bottom: 38px;
   }
 }
 
 .offer__text {
   font-family: var(--accent-font);
-  line-height: 14px;
+  line-height: 1;
   color: var(--action-color);
   text-transform: uppercase;
   text-align: center;
@@ -133,7 +134,7 @@
 
   @media (--not-small-vp) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 1;
     color: var(--accent-text-color);
     text-align: left;
   }

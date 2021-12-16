@@ -66,24 +66,24 @@
             <h2 class="example__title title">Живой пример</h2>
             <p class="example__description description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
             <dl class="example__list stats">
-              <div class="stats__item">
+              <div class="stats__item stats__item--border">
                 <dt class="stats__description">Снижение веса</dt>
                 <dd class="stats__number">5 кг</dd>
               </div>
-              <div class="stats__item">
+              <div class="stats__item stats__item--border">
                 <dt class="stats__description">Затрачено времени</dt>
                 <dd class="stats__number">60 дней</dd>
               </div>
-              <div class="stats__item">
-                <dt class="stats__description">Затраты на питание: </dt>
-                <dd class="stats__number">15 000 руб.</dd>
+              <div class="stats__item stats__item--costs_position">
+                <dt class="stats__description stats__description--text_feature">Затраты на питание: </dt>
+                <dd class="stats__description stats__description--text_feature">15 000 руб.</dd>
               </div>
             </dl>
           </div>
           <div class="effect">
             <figure class="effect__photos">
               <img class="effect__photo effect__photo--before" src="./img/cat_fat.png" alt="Каким был Ваш кот." width="280" height="232">
-              <img class="effect__photo effect__photo--after" src="./img/cat_thin.png" alt="Каким стал Ваш кот." width="243" height="232">
+              <img class="effect__photo effect__photo--after visually-hidden" src="./img/cat_thin.png" alt="Каким стал Ваш кот." width="243" height="232">
               <figcaption class="visually-hidden">Живой пример до функционального питания и после</figcaption>
             </figure>
             <div class="effect__slider" hidden>
@@ -97,5 +97,22 @@
   </main>
 
   {% include "./templates/footer.twig" %}
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
   </body>
 </html>

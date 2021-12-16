@@ -10,6 +10,10 @@
 .page__centerer {
   margin: 0 20px;
 
+  &--nav-menu_mob-position {
+    margin: 0;
+  }
+
   &--form_padding {
     @media (--middle-vp) {
       padding: 0 40px;
@@ -17,8 +21,15 @@
   }
 
   &--nav-menu_position {
-    display: flex;
-    padding-top: 42px;
+    padding-top: 10px;
+
+    @media (--middle-vp) {
+      padding-top: 24px;
+    }
+
+    @media (--wide-vp) {
+      padding-top: 53px;
+    }
   }
 
   &--footer_position {
