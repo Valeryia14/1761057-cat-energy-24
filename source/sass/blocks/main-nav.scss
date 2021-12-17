@@ -2,6 +2,12 @@
   position: relative;
   min-height: 65px;
   width: auto;
+
+  &--color_reshuffle {
+    @media (--wide-vp) {
+      --color_reshuffle: var(--action-color);
+    }
+  }
 }
 
 // Временно, для отображения меню на странице.
@@ -117,12 +123,6 @@
       margin-right: 0;
     }
   }
-
-  @media (--wide-vp) {
-    &--link_color .main-nav__link {
-      color: var(--accent-text-color);
-    }
-  }
 }
 
 .main-nav__link {
@@ -130,7 +130,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
-  color: var(--accent-text-color);
+  color: var(--color_reshuffle, var(--accent-text-color));
   position: relative;
   display: block;
   padding: 22px 10px 24px;

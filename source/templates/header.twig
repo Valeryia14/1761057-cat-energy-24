@@ -6,14 +6,15 @@
     </a>
   </div>
   <div class="page__centerer page__centerer--nav-menu_mob-position">
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+    <nav class="main-nav main-nav--closed main-nav--nojs {% if permalink == "index.html" %}
+    main-nav--color_reshuffle{% endif %}">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           {% for page in pages %}
-            <li class="main-nav__item main-nav__item--link_color">
+            <li class="main-nav__item">
               <a
                 class="main-nav__link"
                 href="{{ page.path }}"
@@ -22,8 +23,6 @@
                 {% endif %}
               >{{ page.name }}</a>
             </li>
-          {% else %}
-            <li>Из навигации пропали все пункты 😕</li>
           {% endfor %}
         </ul>
       </div>
