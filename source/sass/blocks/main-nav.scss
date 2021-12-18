@@ -5,7 +5,7 @@
 
   &--color_reshuffle {
     @media (--wide-vp) {
-      --color_reshuffle: var(--action-color);
+      --reshuffle-color: var(--action-color);
     }
   }
 }
@@ -130,7 +130,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
-  color: var(--color_reshuffle, var(--accent-text-color));
+  color: var(--reshuffle-color, var(--accent-text-color));
   position: relative;
   display: block;
   padding: 22px 10px 24px;
@@ -145,7 +145,6 @@
   }
 
   @media (--wide-vp) {
-    color: var(--action-color);
     font-size: 20px;
     line-height: 30px;
   }
