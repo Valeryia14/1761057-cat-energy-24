@@ -1,11 +1,21 @@
 .general-list__item {
   display: flex;
-}
+  align-items: center;
+  margin-bottom: 14px;
 
-.general-list__item:not(:last-child) {
-  margin-bottom: 12px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (--not-small-vp) {
+    margin-bottom: 20px;
+  }
 }
 
 .general-list__label {
   margin-right: 13px;
+
+  @media (--not-small-vp) {
+    margin-right: 16px;
+  }
 }

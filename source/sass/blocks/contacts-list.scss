@@ -8,12 +8,30 @@
 
 .contacts-list__item {
   display: flex;
-}
-
-.contacts-list__item:not(:last-child) {
+  align-items: center;
   margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (--middle-vp) {
+    margin-bottom: 20px;
+  }
+
+  @media (--wide-vp) {
+    margin-bottom: 0;
+  }
 }
 
 .contacts-list__label {
   margin-right: 14px;
+}
+
+.contacts-list__input {
+  border-color: #cdcdcd;
+
+  @media (--wide-vp) {
+    padding: 10px 19px;
+  }
 }

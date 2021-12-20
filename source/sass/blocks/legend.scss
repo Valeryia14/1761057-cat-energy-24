@@ -5,9 +5,41 @@
   line-height: 26px;
   color: var(--accent-text-color);
   display: block;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    width: 100vw;
+    height: 2px;
+    background-color: var(--main-bg-color);
+    z-index: -1;
+
+    @media (--not-small-vp) {
+      top: 23px;
+    }
+
+    @media (--wide-vp) {
+      transform: translateX(40px);
+    }
+  }
 
   @media (--not-small-vp) {
     font-size: var(--title-size);
-    line-height: 36px;
+    line-height: 1;
+    margin-bottom: 76px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 23px;
+      right: 100%;
+      width: 100vw;
+      height: 2px;
+      background-color: var(--main-bg-color);
+      transform: translateX(-40px);
+      z-index: -1;
+    }
   }
 }

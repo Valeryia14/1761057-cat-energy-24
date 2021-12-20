@@ -11,15 +11,24 @@
   }
 }
 
-.extra-list__item:not(:last-child) {
+.extra-list__item {
   margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (--not-small-vp) {
+    margin-bottom: 0;
+  }
 }
 
 .extra-list__label {
   color: var(--accent-text-color);
+  padding-left: 39px;
 
   @media (--not-small-vp) {
-    font-size: 20px;
-    line-height: 30px;
+    display: block;
+    padding: 5px 1px 5px 59px;
   }
 }

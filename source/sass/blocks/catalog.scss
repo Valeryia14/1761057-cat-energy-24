@@ -1,9 +1,18 @@
 .catalog__table {
   display: grid;
   margin-bottom: 50px;
+
+  @media (--middle-vp) {
+    margin-bottom: 68px;
+  }
+
+  @media (--wide-vp) {
+    margin-bottom: 76px;
+  }
 }
 
 .catalog__button {
   display: block;
   width: 100%;
+  margin-top: auto;
 }

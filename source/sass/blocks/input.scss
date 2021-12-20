@@ -1,13 +1,22 @@
 .input {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.input::placeholder {
-  font-family: var(--accent-font);
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
-  color: var(--main-text-color);
-  text-transform: uppercase;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+  padding: 13px 16px 14px;
+
+  &::placeholder {
+    display: block;
+    font-family: var(--accent-font);
+    line-height: 18px;
+    color: var(--main-text-color);
+    text-transform: uppercase;
+  }
+
+  @media (--not-small-vp) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 20px 11px;
+  }
 }

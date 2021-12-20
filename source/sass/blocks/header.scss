@@ -1,0 +1,11 @@
+.header__chapter {
+  margin-bottom: 27px;
+
+  @media (--middle-vp) {
+    margin-bottom: 65px;
+  }
+
+  @media (--wide-vp) {
+    margin-bottom: 74px;
+  }
+}

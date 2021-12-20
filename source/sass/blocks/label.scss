@@ -6,4 +6,9 @@
   color: var(--main-text-color);
   text-transform: uppercase;
   min-width: fit-content;
+
+  @media (--not-small-vp) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

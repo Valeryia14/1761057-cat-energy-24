@@ -5,9 +5,37 @@
 .field__contacts-legend {
   padding: 0;
   margin-bottom: 35px;
+  position: relative;
+
+  &::after {
+    @media (--small-vp) {
+      top: 17px;
+      transform: translateX(14px);
+    }
+
+    @media (--middle-vp) {
+      transform: translateX(42px);
+    }
+  }
 }
 
 .field__extra-legend {
   padding: 0;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
+  position: relative;
+
+  &::after {
+    @media (--small-vp) {
+      top: 12px;
+      transform: translateX(23px);
+    }
+
+    @media (--middle-vp) {
+      transform: translateX(38px);
+    }
+  }
+
+  @media (--not-small-vp) {
+    margin-bottom: 57px;
+  }
 }

@@ -1,43 +1,67 @@
 .table {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
-  gap: 40px;
+  gap: 33px 40px;
 
   @media (--middle-vp) {
-    gap: 60px;
+    gap: 141px 60px;
   }
 
   @media (--wide-vp) {
-    gap: 80px;
+    gap: 144px 80px;
   }
 }
 
 .table__line {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 33px;
 
   &--show_more {
     grid-template-columns: 1fr;
+    padding-top: 17px;
   }
 
   @media (--not-small-vp) {
     grid-template-columns: 1fr;
+    background-color: var(--accent-bg-color);
     padding: 0 36px 39px;
+
+    &--show_more {
+      background-color: var(--action-color);
+      border: 2px solid var(--accent-bg-color);
+    }
+  }
+
+  @media (--wide-vp) {
+    padding: 0 30px 40px 35px;
   }
 }
 
-.table__line:last-child {
-  margin-top: 50px;
-}
-
 .table__title {
-  padding: 0;
+  text-align: left;
+  width: 80px;
+  padding: 11px 0 14px;
   margin: 0;
-  margin-bottom: 14px;
+
+  &--title_position {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
 
   @media (--not-small-vp) {
     grid-row: 2/3;
+    text-align: center;
+    width: 155px;
+    padding: 0 0 14px;
+    margin: 0 auto;
+
+    &--title_position {
+      align-items: center;
+      width: 100%;
+      padding: 0;
+    }
   }
 }
 
@@ -53,7 +77,22 @@
 
   &--show_position {
     text-align: center;
-    margin-bottom: 8px;
+    margin-bottom: 11px;
+  }
+
+  @media (--not-small-vp) {
+    font-size: 20px;
+    line-height: 24px;
+
+    &--show_position {
+      line-height: 22px;
+      width: 160px;
+      margin-bottom: 23px;
+    }
+  }
+
+  @media (--wide-vp) {
+    line-height: 21px;
   }
 }
 
@@ -61,12 +100,83 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+  position: relative;
   padding: 0;
   margin: 0;
 
+  @media (--not-small-vp) {
+    font-size: 16px;
+  }
+
+  &-mass {
+    text-align: right;
+
+    @media (--not-small-vp) {
+      padding: 7px 0 8px;
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  &-mass::before {
+    content: "Масса";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media (--not-small-vp) {
+      padding: 7px 0 8px;
+    }
+  }
+
+  &-taste {
+    text-align: right;
+
+    @media (--not-small-vp) {
+      padding: 7px 0 6px;
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  &-taste::before {
+    content: "Вкус";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media (--not-small-vp) {
+      padding: 7px 0 6px;
+    }
+  }
+
+  &-price {
+    text-align: right;
+
+    @media (--not-small-vp) {
+      padding: 7px 0 8px;
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  &-price::before {
+    content: "Цена";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media (--not-small-vp) {
+      padding: 7px 0 8px;
+    }
+  }
+
   &--text_position {
     text-align: center;
-    margin-bottom: 21px;
+    margin-bottom: 18px;
+
+    @media (--not-small-vp) {
+      line-height: 18px;
+      width: 170px;
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -86,4 +196,10 @@
 
 .table__button {
   grid-column: 1 / -1;
+  padding-top: 22px;
+  margin-top: auto;
+
+  @media (--not-small-vp) {
+    padding-top: 33px;
+  }
 }

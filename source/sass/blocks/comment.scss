@@ -1,7 +1,48 @@
-.comment__chapter {
+.comment {
   margin-bottom: 27px;
+
+  @media (--middle-vp) {
+    margin-bottom: 65px;
+  }
+
+  @media (--wide-vp) {
+    margin-bottom: 67px;
+  }
 }
 
 .comment__legend {
-  margin-bottom: 38px;
+  display: inline-block;
+
+  &::after {
+    @media (--small-vp) {
+      top: 16px;
+      transform: translateX(22px);
+    }
+
+    @media (--middle-vp) {
+      transform: translateX(38px);
+    }
+  }
+
+  @media (--small-vp) {
+    margin-bottom: 38px;
+  }
+}
+
+.comment__text {
+  min-height: 150px;
+  padding: 0 5px;
+
+  &::placeholder {
+    text-align: center;
+
+    @media (--not-small-vp) {
+      text-align: left;
+    }
+  }
+
+  @media (--not-small-vp) {
+    min-height: 174px;
+    padding: 10px 20px;
+  }
 }

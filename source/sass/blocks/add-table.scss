@@ -1,42 +1,28 @@
-.add-goods__wrapper {
-  @media (--wide-vp) {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0 80px;
-  }
-}
-
-.add-goods__title {
-  @media (--not-small-vp) {
-    font-size: var(--title-size);
-    margin-bottom: 80px;
-  }
-}
-
-.add-goods__table {
-  display: grid;
-  grid-template-columns: 1fr;
-
-  @media (--wide-vp) {
-    grid-column: 1 / 4;
-    margin-bottom: 0;
-  }
+.add-table {
+  border-collapse: collapse;
 }
 
 .add-table__line {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 31px;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+  border-collapse: collapse;
+  padding: 13px 0 19px;
+
 
   @media (--middle-vp) {
     grid-template-columns: repeat(4, 1fr);
     gap: 0 60px;
-    padding: 0 37px;
+    border: 1px solid #cdcdcd;
+    padding: 26px 38px 28px;
   }
 
   @media (--wide-vp) {
     grid-template-columns: 325px 245px 80px 245px;
     width: 895px;
+    align-items: center;
+    padding: 25px 0 24px;
   }
 }
 
@@ -44,23 +30,47 @@
   font-family: var(--accent-font);
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   color: var(--additional-text-color);
   text-transform: uppercase;
-  margin-bottom: 13px;
+  padding: 0 0 13px;
   grid-column: 1 / 3;
   text-align: left;
 
+  @media (--not-small-vp) {
+    font-size: 20px;
+    padding-bottom: 22px;
+  }
+
   @media (--wide-vp) {
     grid-column: 1 / 2;
+    padding-bottom: 0;
   }
 }
 
 .add-table__cell {
   font-weight: 400;
   font-size: var(--description-size);
-  line-height: 14px;
+  line-height: 1;
+  padding: 0;
   margin-bottom: 15px;
+
+  @media (--not-small-vp) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+
+  &--volume {
+    @media (--middle-vp) {
+      text-align: right;
+      margin-right: -60px;
+    }
+
+    @media (--wide-vp) {
+      text-align: left;
+    }
+  }
 
   &--priсe {
     text-align: right;
@@ -68,17 +78,6 @@
     @media (--wide-vp) {
       text-align: left;
     }
-  }
-}
-
-.add-table__cell--volume {
-  @media (--middle-vp) {
-    text-align: right;
-    margin-right: -80px;
-  }
-
-  @media (--wide-vp) {
-    text-align: left;
   }
 }
 
@@ -94,5 +93,4 @@
 .add-goods__button {
   display: block;
   width: 100%;
-  padding: 10px 0;
 }

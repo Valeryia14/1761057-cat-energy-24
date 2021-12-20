@@ -4,4 +4,9 @@
 
 .choice-list__label {
   color: var(--additional-text-color);
+  padding-left: 31px;
+
+  @media (--not-small-vp) {
+    padding-left: 60px;
+  }
 }

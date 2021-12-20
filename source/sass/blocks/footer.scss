@@ -1,0 +1,9 @@
+.footer {
+  &--location_bg {
+    --bg-color: var(--action-color);
+  }
+}
+
+.footer__location {
+  background-color: var(--bg-color, var(--accent-bg-color));
+}
