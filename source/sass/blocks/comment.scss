@@ -1,4 +1,4 @@
-.comment {
+.comment__chapter {
   margin-bottom: 27px;
 
   @media (--middle-vp) {
@@ -27,11 +27,16 @@
   @media (--small-vp) {
     margin-bottom: 38px;
   }
+
+  @media (--not-small-vp) {
+    margin-bottom: 76px;
+  }
 }
 
 .comment__text {
   min-height: 150px;
   padding: 0 5px;
+  resize: vertical;
 
   &::placeholder {
     text-align: center;

@@ -7,6 +7,10 @@
   margin-bottom: 35px;
   position: relative;
 
+  @media (--not-small-vp) {
+    margin-bottom: 76px;
+  }
+
   &::after {
     @media (--small-vp) {
       top: 17px;

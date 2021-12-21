@@ -3,7 +3,7 @@
   background:
     linear-gradient(
     rgba(104, 183, 56, 0.85) 0% 63%,
-    #ffffff 63% 100%
+    var(--action-color) 63% 100%
     ),
     #4f4f54 url("../../img/main_bg.jpg") no-repeat top;
   background-size: contain;
@@ -19,7 +19,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-left: 80px;
-    margin-bottom: 80px;
     background: none;
   }
 }
@@ -97,6 +96,7 @@
 
   @media (--wide-vp) {
     min-height: 553px;
+    margin-bottom: 80px;
   }
 }
 
@@ -140,7 +140,7 @@
   }
 
   @media (--wide-vp) {
-    margin: 0 0 54px 0;
+    margin: 0 0 54px;
   }
 }
 

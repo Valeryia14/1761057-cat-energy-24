@@ -10,6 +10,10 @@
   border-collapse: collapse;
   padding: 13px 0 19px;
 
+  &:not(:last-child) {
+    border-bottom: none;
+  }
+
 
   @media (--middle-vp) {
     grid-template-columns: repeat(4, 1fr);
