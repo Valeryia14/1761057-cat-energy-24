@@ -1,4 +1,4 @@
-.location {
+.loction__chapter {
   padding: 26px 0;
 
   @media (--middle-vp) {
@@ -12,10 +12,7 @@
     position: absolute;
     background-color: var(--action-color);
     padding: 0;
-
-    &--position {
-      margin-top: 97px;
-    }
+    margin-top: 97px;
   }
 }
 
