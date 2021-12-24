@@ -1,21 +1,17 @@
 .offer {
-  min-height: 480px;
+  --url-cat-s: url("../../img/main-bg-s@1x.jpg");
+  --url-cat-l: url("../../img/main-bg-l@1x.jpg");
+
   background:
     linear-gradient(
     rgba(104, 183, 56, 0.85) 63%,
     var(--action-color) 63%
     ),
-    #444348 url("../../img/main-bg-s@1x.jpg") no-repeat top;
-  background-size: contain;
+    #444348 var(--url-cat-s) no-repeat top;
   position: relative;
 
-  @media (min-resolution: 2dppx) {
-    background:
-      linear-gradient(
-      rgba(104, 183, 56, 0.85) 63%,
-      var(--action-color) 63%
-      ),
-      #444348 url("../../img/main-bg-s@2x.jpg") no-repeat top;
+  @media (--x2) {
+    --url-cat-s: url("../../img/main-bg-s@2x.jpg");
     background-size: 320px auto;
   }
 
@@ -34,20 +30,9 @@
 }
 
 .offer::before {
-  position: absolute;
-  content: "";
-  background:
-    linear-gradient(
-    rgba(104, 183, 56, 0.85),
-    rgba(104, 183, 56, 0.85)),
-    #4f4f54 url("../../img/main_bg.jpg") no-repeat top;
-  background-size: contain;
-
-  @media (--middle-vp) {
-    display: none;
-  }
-
   @media (--wide-vp) {
+    position: absolute;
+    content: "";
     top: 0;
     right: 0;
     min-height: 694px;
@@ -55,30 +40,47 @@
       linear-gradient(
       rgba(104, 183, 56, 0.85),
       rgba(104, 183, 56, 0.85)),
-      #4f4e53 url("../../img/main_bg.jpg") no-repeat;
-    background-size: contain;
-    background-position: top 0 left 180px;
+      #4f4e53 var(--url-cat-l) no-repeat;
+    background-position: top 0 left -20px;
     left: 50%;
     z-index: -1;
+  }
+
+  @media (--x2) {
+    --url-cat-l: url("../../img/main-bg-l@2x.jpg");
+    background-size: 1044px auto;
   }
 }
 
 .offer::after {
+  --url-box-s: url("../../img/catenergy-box-s@1x.png");
+  --url-box-m: url("../../img/catenergy-box-m@1x.png");
+  --url-box-l: url("../../img/catenergy-box-l@1x.png");
+
   position: absolute;
   content: "";
   top: 167px;
   left: 50%;
   transform: translateX(-50%);
-  width: 270px;
-  height: 280px;
-  background: url("../../img/catenergy_box.png") no-repeat;
+  width: 280px;
+  height: 270px;
+  background: var(--url-box-s) no-repeat;
   background-size: contain;
+
+  @media (--x2) {
+    --url-box-s: url("../../img/catenergy-box-s@2x.png");
+  }
 
   @media (--middle-vp) {
     top: 255px;
     width: 709px;
-    height: 675px;
+    height: 609px;
+    background: var(--url-box-m) no-repeat;
     background-size: cover;
+
+    @media (--x2) {
+      --url-box-m: url("../../img/catenergy-box-m@2x.png");
+    }
   }
 
   @media (--wide-vp) {
@@ -86,9 +88,14 @@
     transform: translateX(0);
     width: 552px;
     height: 499px;
-    top: 40px;
+    top: -82px;
     left: -205px;
+    background: var(--url-box-l) no-repeat;
     background-size: cover;
+  }
+
+  @media (--x2) {
+    --url-box-l: url("../../img/catenergy-box-l@2x.png");
   }
 }
 
@@ -105,8 +112,8 @@
   }
 
   @media (--wide-vp) {
-    min-height: 553px;
-    margin-bottom: 80px;
+    min-height: 471px;
+    margin-bottom: 82px;
   }
 }
 
@@ -128,7 +135,7 @@
   }
 
   @media (--wide-vp) {
-    padding-top: 111px;
+    padding-top: 0;
     margin-bottom: 38px;
   }
 }

@@ -182,11 +182,11 @@
 
 .table__image {
   display: block;
+  text-align: center;
   grid-area: 1 / 1 / 5 / 2;
 
   @media (--not-small-vp) {
     grid-row: 1 / 2;
-    text-align: center;
   }
 }
 

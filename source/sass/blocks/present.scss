@@ -1,35 +1,53 @@
-.present {
+.present__chapter {
   min-height: 290px;
+  margin-bottom: 35px;
   position: relative;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background:
-      linear-gradient(
-      rgba(104, 183, 56, 0.85),
-      rgba(104, 183, 56, 0.85)),
-      url("../../img/cat_case.jpg") no-repeat center;
-    background-size: cover;
-    z-index: -1;
-  }
-
-  @media (--wide-vp) {
-    grid-column: 4 / 5;
-  }
-}
-
-.present__chapter {
-  margin-bottom: 35px;
-
-  @media (--not-small-vp) {
+  @media (--middle-vp) {
+    min-height: 200px;
     margin-bottom: 76px;
   }
 
   @media (--wide-vp) {
+    min-height: 100%;
     margin-bottom: 0;
+  }
+}
+
+.present__chapter::before {
+  --url-cat-case: url("../../img/cat-case-s@1x.jpg");
+
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(
+    rgba(104, 183, 56, 0.85),
+    rgba(104, 183, 56, 0.85)),
+    var(--url-cat-case) no-repeat center;
+  background-size: cover;
+  z-index: -1;
+
+  @media (--x2) {
+    --url-cat-case: url("../../img/cat-case-s@2x.jpg");
+  }
+
+  @media (--middle-vp) {
+    --url-cat-case: url("../../img/cat-case-m@1x.jpg");
+
+    @media (--x2) {
+      --url-cat-case: url("../../img/cat-case-m@2x.jpg");
+    }
+  }
+
+  @media (--wide-vp) {
+    grid-column: 4 / 5;
+    --url-cat-case: url("../../img/cat-case-l@1x.jpg");
+
+    @media (--x2) {
+      --url-cat-case: url("../../img/cat-case-l@2x.jpg");
+    }
   }
 }
 

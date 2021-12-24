@@ -82,8 +82,18 @@
           </div>
           <div class="effect">
             <figure class="effect__photos">
-              <img class="effect__photo effect__photo--before" src="./img/cat_fat.png" alt="Каким был Ваш кот." width="280" height="232">
-              <img class="effect__photo effect__photo--after visually-hidden" src="./img/cat_thin.png" alt="Каким стал Ваш кот." width="243" height="232">
+              <picture>
+            <!--<source media="(min-width: 768px)" srcset="./img/cat-double-m@1x.avif, ./img/cat-double-m@2x.avif">
+                <source media="(max-width: 767.9px)" srcset="./img/cat-double-s@1x.avif, ./img/cat-double-s@2x.avif">-->
+                <source media="(min-width: 768px)" srcset="./img/cat-double-m@1x.png, ./img/cat-double-m@2x.png">
+                <img class="effect__photo effect__photo--before" src="./img/cat-fat-s@1x.png" srcset="./img/cat-fat-s@2x.png" alt="Каким был Ваш кот." width="280" height="232">
+              </picture>
+              <picture>
+            <!--<source media="(min-width: 768px)" srcset="./img/cat-double-m@1x.avif, ./img/cat-double-m@2x.avif">
+                <source media="(max-width: 767.9px)" srcset="./img/cat-double-s@1x.avif, ./img/cat-double-s@2x.avif">-->
+                <source media="(min-width: 768px)" srcset="./img/cat-double-m@1x.png, ./img/cat-double-m@2x.png">
+                <img class="effect__photo effect__photo--after visually-hidden" src="./img/cat-thin-s@1x.png" srcset="./img/cat-thin-s@1x.png" alt="Каким стал Ваш кот." width="243" height="232">
+              </picture>
               <figcaption class="visually-hidden">Живой пример до функционального питания и после</figcaption>
             </figure>
             <div class="effect__slider" hidden>

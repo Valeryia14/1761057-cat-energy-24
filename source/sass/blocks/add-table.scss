@@ -1,13 +1,8 @@
-.add-table {
-  border-collapse: collapse;
-}
-
 .add-table__line {
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-top: 1px solid #cdcdcd;
   border-bottom: 1px solid #cdcdcd;
-  border-collapse: collapse;
   padding: 13px 0 19px;
 
   &:not(:last-child) {
