@@ -13,22 +13,7 @@
 
 .catalog__img {
   @media (--not-small-vp) {
-    &--hen_500 {
-      width: 161px;
-      height: 172px;
-    }
-
-    &--hen_1000 {
-      width: 168px;
-      height: 206px;
-    }
-  }
-
-  @media (--wide-vp) {
-    &--hen_1000 {
-      width: 172px;
-      height: 202px;
-    }
+    margin-top: -35px;
   }
 }
 

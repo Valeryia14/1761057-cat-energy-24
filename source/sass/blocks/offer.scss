@@ -1,6 +1,10 @@
 .offer {
   --url-cat-s: url("../../img/main-bg-s@1x.jpg");
   --url-cat-l: url("../../img/main-bg-l@1x.jpg");
+  --url-box-s: url("../../img/catenergy-box-s@1x.png");
+  --url-box-m: url("../../img/catenergy-box-m@1x.png");
+  --url-box-l: url("../../img/catenergy-box-l@1x.png");
+
 
   background:
     linear-gradient(
@@ -53,10 +57,6 @@
 }
 
 .offer::after {
-  --url-box-s: url("../../img/catenergy-box-s@1x.png");
-  --url-box-m: url("../../img/catenergy-box-m@1x.png");
-  --url-box-l: url("../../img/catenergy-box-l@1x.png");
-
   position: absolute;
   content: "";
   top: 167px;
