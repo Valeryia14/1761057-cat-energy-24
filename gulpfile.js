@@ -182,15 +182,15 @@ export const build = series(
 
 export default series(
   removeBuild,
-  copyAssets,
-  copyImages,
   parallel(
     processStyles,
     processMarkup,
     processScripts,
     createSprite,
+    copyAssets,
+    copyImages,
     createWebp,
-    // createAvif
+    createAvif
   ),
   series(
     startServer,

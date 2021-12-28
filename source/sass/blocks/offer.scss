@@ -5,19 +5,7 @@
   --url-box-m: url("../../img/catenergy-box-m@1x.png");
   --url-box-l: url("../../img/catenergy-box-l@1x.png");
 
-
-  background:
-    linear-gradient(
-    rgba(104, 183, 56, 0.85) 63%,
-    var(--action-color) 63%
-    ),
-    #444348 var(--url-cat-s) no-repeat top;
   position: relative;
-
-  @media (--x2) {
-    --url-cat-s: url("../../img/main-bg-s@2x.jpg");
-    background-size: 320px auto;
-  }
 
   @media (--middle-vp) {
     background: var(--action-color);
@@ -34,20 +22,34 @@
 }
 
 .offer::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 302px;
+  z-index: -1;
+  background:
+    linear-gradient(
+    rgba(104, 183, 56, 0.85),
+    rgba(104, 183, 56, 0.85)),
+    #4f4e53 var(--url-cat-s) no-repeat;
+
+  @media (--x2) {
+    --url-cat-s: url("../../img/main-bg-s@2x.jpg");
+    background-size: 320px auto;
+  }
+
+  @media (--middle-vp) {
+    background: none;
+  }
+
   @media (--wide-vp) {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
+    --url-cat-s: url("../../img/main-bg-l@1x.jpg");
+    width: 50%;
     min-height: 694px;
-    background:
-      linear-gradient(
-      rgba(104, 183, 56, 0.85),
-      rgba(104, 183, 56, 0.85)),
-      #4f4e53 var(--url-cat-l) no-repeat;
     background-position: top 0 left -20px;
     left: 50%;
-    z-index: -1;
   }
 
   @media (--x2) {

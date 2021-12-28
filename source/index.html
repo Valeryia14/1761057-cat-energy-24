@@ -1,5 +1,6 @@
 {% set pageId = 0 %}
 {% set permalink = pages[pageId].path %}
+{% import "./templates/macros.twig" as macros %}
 
 <!DOCTYPE html>
 <html class="page" lang="ru">
@@ -82,18 +83,8 @@
           </div>
           <div class="effect">
             <figure class="effect__photos">
-              <picture>
-            <!--<source media="(min-width: 768px)" srcset="./img/cat-double-m@1x.avif 1x, ./img/cat-double-m@2x.avif 2x">
-                <source media="(max-width: 767.9px)" srcset="./img/cat-double-s@1x.avif 1x, ./img/cat-double-s@2x.avif 2x">-->
-                <source media="(min-width: 768px)" srcset="./img/cat-double-m@1x.png 1x, ./img/cat-double-m@2x.png 2x">
-                <img class="effect__photo effect__photo--before" src="./img/cat-fat-s@1x.png" srcset="./img/cat-fat-s@2x.png 2x" alt="Каким был Ваш кот." width="280" height="232">
-              </picture>
-              <picture>
-            <!--<source media="(min-width: 768px)" srcset="./img/cat-double-m@1x.avif 1x, ./img/cat-double-m@2x.avif 2x">
-                <source media="(max-width: 767.9px)" srcset="./img/cat-double-s@1x.avif 1x, ./img/cat-double-s@2x.avif 2x">-->
-                <source media="(min-width: 768px)" srcset="./img/cat-double-m@1x.png 1x, ./img/cat-double-m@2x.png 2x">
-                <img class="effect__photo effect__photo--after visually-hidden" src="./img/cat-thin-s@1x.png" srcset="./img/cat-thin-s@2x.png 2x" alt="Каким стал Ваш кот." width="243" height="232">
-              </picture>
+              {{ macros.picture("effect__photo effect__photo--before", "cat-fat", "png", "./img/", "Каким был Ваш кот.", "280", "232", null) }}
+         <!-- {{ macros.picture("effect__photo effect__photo--after", "cat-thin", "png", "./img/", "Каким стал Ваш кот.", "243", "232", null) }} -->
               <figcaption class="visually-hidden">Живой пример до функционального питания и после</figcaption>
             </figure>
             <div class="effect__slider" hidden>
