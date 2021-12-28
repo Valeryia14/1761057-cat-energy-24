@@ -14,8 +14,9 @@
 
   @media (--wide-vp) {
     position: static;
-    //display: grid;
-    //grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 80px;
     background: none;
   }
 }
@@ -25,7 +26,7 @@
   content: "";
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
   min-height: 302px;
   z-index: -1;
   background:
@@ -84,12 +85,12 @@
   }
 
   @media (--wide-vp) {
-    //position: relative;
+    position: relative;
     transform: translateX(-162px);
     width: 552px;
     height: 499px;
-    //top: -82px;
-    //left: -205px;
+    top: -82px;
+    left: -205px;
     background: var(--url-box-l) no-repeat;
     background-size: cover;
   }
