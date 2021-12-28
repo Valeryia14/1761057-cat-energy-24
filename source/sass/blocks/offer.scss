@@ -5,8 +5,6 @@
   --url-box-m: url("../../img/catenergy-box-m@1x.png");
   --url-box-l: url("../../img/catenergy-box-l@1x.png");
 
-  position: relative;
-
   @media (--middle-vp) {
     background: var(--action-color);
     padding-left: 87px;
@@ -24,7 +22,6 @@
 .offer::before {
   position: absolute;
   content: "";
-  top: 0;
   left: 0;
   right: 0;
   min-height: 302px;
@@ -57,7 +54,7 @@
   }
 }
 
-.offer::after {
+.offer__chapter::after {
   position: absolute;
   content: "";
   top: 167px;
@@ -105,6 +102,7 @@
   flex-direction: column;
   min-height: 480px;
   margin-bottom: 20px;
+  position: relative;
 
   @media (--middle-vp) {
     min-height: 920px;
