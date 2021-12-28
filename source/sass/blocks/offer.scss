@@ -42,6 +42,7 @@
   }
 
   @media (--wide-vp) {
+    top: 0;
     --url-cat-s: url("../../img/main-bg-l@1x.jpg");
     min-height: 694px;
     background-position: top 0 left -20px;
@@ -51,6 +52,26 @@
   @media (--x2) {
     --url-cat-l: url("../../img/main-bg-l@2x.jpg");
     background-size: 1044px auto;
+  }
+}
+
+.offer__chapter {
+  display: flex;
+  flex-direction: column;
+  min-height: 480px;
+  margin-bottom: 20px;
+  position: relative;
+
+  @media (--middle-vp) {
+    min-height: 920px;
+    order: 2;
+    margin-bottom: 0;
+  }
+
+  @media (--wide-vp) {
+    min-height: 471px;
+    padding-right: 65px;
+    margin-bottom: 82px;
   }
 }
 
@@ -82,37 +103,18 @@
   }
 
   @media (--wide-vp) {
-    position: relative;
+    position: absolute;
     transform: translateX(0);
     width: 552px;
     height: 499px;
     top: -82px;
-    left: -205px;
+    left: 368px;
     background: var(--url-box-l) no-repeat;
     background-size: cover;
   }
 
   @media (--x2) {
     --url-box-l: url("../../img/catenergy-box-l@2x.png");
-  }
-}
-
-.offer__chapter {
-  display: flex;
-  flex-direction: column;
-  min-height: 480px;
-  margin-bottom: 20px;
-  position: relative;
-
-  @media (--middle-vp) {
-    min-height: 920px;
-    order: 2;
-    margin-bottom: 0;
-  }
-
-  @media (--wide-vp) {
-    min-height: 471px;
-    margin-bottom: 82px;
   }
 }
 
@@ -147,6 +149,7 @@
   text-align: center;
   padding: 0;
   margin: 0 0 49px 0;
+  z-index: 1;
 
   @media (--not-small-vp) {
     font-size: 20px;
