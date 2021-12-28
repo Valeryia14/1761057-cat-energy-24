@@ -86,7 +86,7 @@
 
   @media (--wide-vp) {
     position: relative;
-    transform: translateX(-162px);
+    transform: translateX(0);
     width: 552px;
     height: 499px;
     top: -82px;
@@ -113,7 +113,6 @@
   }
 
   @media (--wide-vp) {
-    padding-left: 80px;
     min-height: 471px;
     margin-bottom: 82px;
   }
