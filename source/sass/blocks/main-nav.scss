@@ -1,6 +1,4 @@
 .main-nav {
-  position: relative;
-  min-height: 65px;
   width: auto;
 
   &--color_reshuffle {
@@ -33,7 +31,7 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 13px;
+  top: 23px;
   left: 0;
   width: 24px;
   height: 2px;

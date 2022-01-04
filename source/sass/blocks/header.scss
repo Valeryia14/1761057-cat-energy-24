@@ -1,5 +1,5 @@
 .header__chapter {
-  margin-bottom: 27px;
+  margin-bottom: 17px;
 
   @media (--middle-vp) {
     margin-bottom: 65px;
@@ -7,5 +7,18 @@
 
   @media (--wide-vp) {
     margin-bottom: 74px;
+  }
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header-logo__name {
+  @media (--small-vp) {
+    padding-top: 6px;
+    margin: 0 auto;
   }
 }
