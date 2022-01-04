@@ -8,8 +8,6 @@
   }
 }
 
-// Временно, для отображения меню на странице.
-// Позже заменю на svg ;)
 .main-nav__toggle {
   content: "";
   position: absolute;
@@ -17,7 +15,7 @@
   right: 20px;
   z-index: 2;
   width: 24px;
-  height: 37px;
+  height: 18px;
   background-color: var(--action-color);
   padding: 0;
   cursor: pointer;
@@ -28,43 +26,26 @@
   }
 }
 
-.main-nav--closed .main-nav__toggle::before {
+.main-nav--closed .main-nav__svg-open {
   content: "";
   position: absolute;
-  top: 23px;
+  top: 20px;
   left: 0;
-  width: 24px;
-  height: 2px;
-  background-color: var(--accent-text-color);
-  box-shadow:
-    0 7px 0 0 var(--accent-text-color),
-    0 14px 0 0 var(--accent-text-color);
 }
 
-.main-nav--opened .main-nav__toggle {
+.main-nav--closed .main-nav__svg-close {
+  display: none;
+}
+
+.main-nav--opened .main-nav__svg-open {
+  display: none;
+}
+
+.main-nav--opened .main-nav__svg-close {
   content: "";
-  top: 0;
-  right: 20px;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 13px;
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background-color: var(--accent-text-color);
-  }
-
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
+  position: absolute;
+  top: 20px;
+  left: 0;
 }
 
 @media (--small-vp) {

@@ -1,7 +1,7 @@
 <header class="header">
   <div class="header__chapter">
     <div class="page__centerer page__centerer--nav-menu_position">
-      <a class="header-logo" hidden href="index.html">
+      <a class="header-logo" href="index.html">
         <svg class="header-logo__img" width="34" height="38">
           <use xlink:href="#logo-betmen-s"></use>
         </svg>
@@ -14,7 +14,12 @@
       <nav class="main-nav main-nav--closed main-nav--nojs {% if permalink == "index.html" %}
       main-nav--color_reshuffle{% endif %}">
         <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <svg class="main-nav__svg-open" width="24" height="18" aria-label="Открыть меню">
+            <use xlink:href="#burger"></use>
+          </svg>
+          <svg class="main-nav__svg-close" width="20" height="20" aria-label="Закрыть меню">
+            <use xlink:href="#cross"></use>
+          </svg>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
