@@ -91,9 +91,10 @@
   }
 
   @media (--middle-vp) {
-    top: 255px;
+    top: 201px;
     width: 709px;
     height: 609px;
+    transform: translateX(-56%);
     background: var(--url-box-m) no-repeat;
     background-size: cover;
 
@@ -131,7 +132,7 @@
     line-height: 1;
     color: var(--accent-text-color);
     text-align: left;
-    padding-top: 63px;
+    padding-top: 0;
     margin-bottom: 41px;
   }
 
