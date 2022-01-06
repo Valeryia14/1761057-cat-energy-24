@@ -49,11 +49,16 @@
 }
 
 .header-logo__text {
-  display: block;
+  display: none;
 
-  @media (--middle-vp) {
-    width: 102px;
-    height: 19px;
+  @media (--small-vp) {
+    display: block;
+  }
+}
+
+.header-logo__another-text {
+  @media (--small-vp) {
+    display: none;
   }
 
   @media (--wide-vp) {

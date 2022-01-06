@@ -7,11 +7,10 @@
           <source media="(min-width: 768px)" srcset="./img/logo.svg#logo-m">
           <img class="header-logo__img" src="./img/logo.svg#logo-s" width="34" height="38" alt="Логотип компании.">
         </picture>
-        <picture>
-          <source media="(min-width: 1280px)" srcset="./img/logo.svg#logo-text-l">
-          <source media="(min-width: 768px)" srcset="./img/logo.svg#logo-text-m">
-          <img class="header-logo__text" src="./img/logo.svg#logo-text-s" width="101" height="18" alt="Логотип компании.">
-        </picture>
+        <svg class="header-logo__another-text" width="102" height="19">
+          <use href="./img/logo.svg#logo-text-m" />
+        </svg>
+        <img class="header-logo__text" src="./img/logo.svg#logo-text-s" width="101" height="18" alt="Логотип компании.">
       </a>
 
       <nav class="main-nav main-nav--closed main-nav--nojs {% if permalink == "index.html" %}

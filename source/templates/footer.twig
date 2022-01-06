@@ -26,7 +26,9 @@ footer--location_bg{% endif %}">
   </div>
   <div class="page__centerer">
     <div class="footer-info">
-      <img class="footer-info__logo-text" src="./img/logo.svg#logo-text-footer" width="128" height="24" alt="Логотип компании.">
+      <svg class="footer-info__logo-text" width="128" height="24">
+        <use href="./img/logo.svg#logo-text-s" />
+      </svg>
       <ul class="footer__social social-list">
         <li class="social-list__item">
           <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">
@@ -48,14 +50,14 @@ footer--location_bg{% endif %}">
           <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy">
             <picture>
               <source media="(min-width: 768px)" srcset="./img/social.svg#facebook-m">
-              <img class="social-list__icon" src="./img/social.svg#facebook-s" width="15" height="20" alt="Фейсбук.">
+              <img class="social-list__icon" src="./img/social.svg#facebook-s" width="16" height="20" alt="Фейсбук.">
             </picture>
           </a>
         </li>
       </ul>
       <a class="footer__link link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="link__text">HTML Academy</span>
-        <svg class="link__icon" width="27" height="34"><use></use></svg>
+        <img class="footer-link__img" src="./img/logo.svg#htmlacademy" width="27" height="34" alt="Логотип HTML Академии.">
       </a>
     </div>
   </div>
