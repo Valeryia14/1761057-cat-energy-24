@@ -17,11 +17,45 @@
   display: flex;
   align-items: center;
   text-decoration: none;
+
+  @media (--small-vp) {
+    padding-top: 10px;
+  }
 }
 
 .header-logo__name {
   @media (--small-vp) {
     padding-top: 6px;
     margin: 0 auto;
+  }
+}
+
+.header-logo__img {
+  display: block;
+
+  @media (--middle-vp) {
+    width: 62px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  @media (--wide-vp) {
+    width: 70px;
+    height: 59px;
+    margin-right: 14px;
+  }
+}
+
+.header-logo__text {
+  display: block;
+
+  @media (--middle-vp) {
+    width: 102px;
+    height: 19px;
+  }
+
+  @media (--wide-vp) {
+    width: 118px;
+    height: 21px;
   }
 }

@@ -20,18 +20,6 @@
     }
   }
 
-  &--nav-menu_position {
-    padding-top: 10px;
-
-    @media (--middle-vp) {
-      padding-top: 0;
-    }
-
-    @media (--wide-vp) {
-      padding-top: 53px;
-    }
-  }
-
   &--footer_position {
     display: flex;
     flex-direction: column;
