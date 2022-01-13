@@ -48,17 +48,20 @@
   }
 }
 
-.header-logo__text {
+/*.header-logo__text {
   display: none;
 
   @media (--small-vp) {
     display: block;
   }
-}
+}*/
 
 .header-logo__another-text {
-  @media (--small-vp) {
+  /* @media (--small-vp) {
     display: none;
+  }*/
+  @media (--not-small-vp) {
+    --fill: #444444;
   }
 
   @media (--wide-vp) {
