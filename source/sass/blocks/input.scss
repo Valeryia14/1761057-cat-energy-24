@@ -5,6 +5,7 @@
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
   padding: 13px 13px 14px 14px;
+  appearance: textfield;
 
   &::placeholder {
     display: block;

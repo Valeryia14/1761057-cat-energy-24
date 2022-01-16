@@ -22,12 +22,14 @@
 
 .general-list__input {
   &:user-invalid {
-    border-color: #ff8282;
+    outline: 2px solid #ff8282;
+    outline-offset: -2px;
   }
 
   @supports not selector(:user-invalid) {
-    &--error {
-      border-color: #ff8282;
+    &--error:required {
+      outline: 2px solid #ff8282;
+      outline-offset: -2px;
     }
   }
 }

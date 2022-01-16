@@ -78,3 +78,7 @@
 .extra-list__input:checked::before {
   transform: scale(1);
 }
+
+.extra-list__input:disabled::before {
+  opacity: 0.3;
+}

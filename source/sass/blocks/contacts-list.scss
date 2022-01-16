@@ -40,6 +40,18 @@
   @media (--wide-vp) {
     padding: 10px 19px;
   }
+
+  &:user-invalid {
+    outline: 2px solid #ff8282;
+    outline-offset: -2px;
+  }
+
+  @supports not selector(:user-invalid) {
+    &--error:required {
+      outline: 2px solid #ff8282;
+      outline-offset: -2px;
+    }
+  }
 }
 
 .contacts-list__icon--icon_letter::before {
@@ -67,4 +79,14 @@
 
 .contacts-list__icon--icon_phone:focus::before {
   background-color: var(--main-bg-color);
+}
+
+.contacts-list__icon--icon_phone:user-invalid::before {
+  background-color: #ff8282;
+
+  @supports not selector(:user-invalid) {
+    &--error:required {
+      background-color: #ff8282;
+    }
+  }
 }
