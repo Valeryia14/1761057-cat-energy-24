@@ -16,7 +16,7 @@
   @media (--not-small-vp) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 58px 0 55px;
+    padding: 56px 0 55px;
   }
 }
 
@@ -28,7 +28,7 @@
   }
 
   @media (--not-small-vp) {
-    padding-top: 6px;
+    padding-top: 8px;
   }
 
   &:hover {
@@ -50,6 +50,10 @@
   @media (--not-small-vp) {
     justify-content: flex-end;
   }
+
+  @media (--wide-vp) {
+    padding-top: 3px;
+  }
 }
 
 .footer__link:active {
@@ -61,7 +65,11 @@
   width: 27px;
   height: 34px;
   background-color: #666666;
-  mask: url("../../icons/sprite.svg#htmlacademy") no-repeat center / cover;
+  mask: url("../../img/logo.svg#htmlacademy") no-repeat center / cover;
+
+  @media (--not-small-vp) {
+    margin-left: 24px;
+  }
 }
 
 .footer__link--icon_htmlacademy:hover::after {

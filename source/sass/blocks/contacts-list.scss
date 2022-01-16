@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 14px;
+  position: relative;
 
   &:last-child {
     margin-bottom: 0;
@@ -24,6 +25,10 @@
   }
 }
 
+.contacts-list__item:focus-visible ~ .contacts-list__icon--icon_letter::before {
+  background-color: var(--main-bg-color);
+}
+
 .contacts-list__label {
   margin-right: 14px;
 }
@@ -34,4 +39,31 @@
   @media (--wide-vp) {
     padding: 10px 19px;
   }
+}
+
+.contacts-list__icon--icon_letter::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  width: 20px;
+  height: 15px;
+  background-color: var(--additional-text-color);
+  mask: url("../../icons/sprite.svg#letter") no-repeat center;
+}
+
+
+.contacts-list__icon--icon_phone::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 20px;
+  height: 15px;
+  background-color: var(--additional-text-color);
+  mask: url("../../icons/sprite.svg#phone") no-repeat center;
+}
+
+.contacts-list__icon--icon_phone:focus::before {
+  background-color: var(--main-bg-color);
 }

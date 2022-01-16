@@ -96,10 +96,22 @@
   }
 
   @media (--not-small-vp) {
-    margin-right: 35px;
+    margin-right: 38px;
+
+    &:first-child {
+      margin-right: 33px;
+    }
 
     &:last-child {
       margin-right: 0;
+    }
+  }
+
+  @media (--wide-vp) {
+    margin-right: 33px;
+
+    &:first-child {
+      margin-right: 36px;
     }
   }
 }
@@ -112,10 +124,14 @@
   color: var(--reshuffle-color, var(--accent-text-color));
   position: relative;
   display: block;
-  padding: 22px 10px 24px;
+  padding: 25px 0 21px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+
+  &:hover {
+    color: rgb(0, 0, 0, 0.6);
+  }
 
   @media (--not-small-vp) {
     font-weight: 400;

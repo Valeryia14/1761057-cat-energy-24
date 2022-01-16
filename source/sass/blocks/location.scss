@@ -1,8 +1,8 @@
-.loction__chapter {
+.location__chapter {
   padding: 26px 0;
 
   @media (--middle-vp) {
-    padding: 56px 40px;
+    padding: 60px 40px;
   }
 
   @media (--wide-vp) {
@@ -12,13 +12,13 @@
     position: absolute;
     background-color: var(--action-color);
     padding: 0;
-    margin-top: 97px;
+    margin-top: 95px;
   }
 }
 
-.location__chapter {
-  display: flex;
-  justify-content: space-between;
+.location__inform {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
 
   @media (--wide-vp) {
@@ -35,7 +35,7 @@
   line-height: 20px;
   color: #111111;
   padding: 0;
-  margin: 0 15px 0 0;
+  margin: 0 10px 0 0;
   text-transform: uppercase;
 
   @media (--not-small-vp) {
@@ -45,7 +45,7 @@
   }
 
   @media (--wide-vp) {
-    padding: 54px 0 58px 80px;
+    padding: 62px 0 58px 80px;
     margin: 0;
   }
 }

@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr;
   border-top: 1px solid #cdcdcd;
   border-bottom: 1px solid #cdcdcd;
-  padding: 13px 0 19px;
+  padding: 13px 0 18px;
 
   &:not(:last-child) {
     border-bottom: none;
@@ -21,7 +21,7 @@
     grid-template-columns: 325px 245px 80px 245px;
     width: 895px;
     align-items: center;
-    padding: 25px 0 24px;
+    padding: 15px 0 16px;
   }
 }
 
@@ -38,7 +38,7 @@
 
   @media (--not-small-vp) {
     font-size: 20px;
-    padding-bottom: 22px;
+    padding-bottom: 24px;
   }
 
   @media (--wide-vp) {
@@ -63,16 +63,22 @@
   &--volume {
     @media (--middle-vp) {
       text-align: right;
-      margin-right: -60px;
+      padding-top: 3px;
+      margin-right: -80px;
     }
 
     @media (--wide-vp) {
       text-align: left;
+      padding-top: 6px;
     }
   }
 
   &--priсe {
     text-align: right;
+
+    @media (--not-small-vp) {
+      padding-top: 3px;
+    }
 
     @media (--wide-vp) {
       text-align: left;

@@ -19,3 +19,7 @@
     margin-right: 16px;
   }
 }
+
+.general-list__input:invalid {
+  border-color: #ff8282;
+}

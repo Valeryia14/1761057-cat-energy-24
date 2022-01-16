@@ -3,10 +3,60 @@
 }
 
 .choice-list__label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0 15px;
   color: var(--additional-text-color);
-  padding-left: 31px;
 
   @media (--not-small-vp) {
-    padding-left: 60px;
+    gap: 0 20px;
   }
+
+  &:disabled {
+    color: rgb(186, 186, 186, 0.3);
+  }
+}
+
+.choice-list__input {
+  appearance: none;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  transform: translateY(-18%);
+  display: grid;
+  place-content: center;
+  margin: 0;
+
+  @media (--not-small-vp) {
+    width: 40px;
+    height: 40px;
+  }
+
+  &:hover {
+    border-color: #bababa;
+  }
+
+  &:disabled {
+    border-color: rgb(186, 186, 186, 0.3);
+  }
+}
+
+.choice-list__input::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  transform: scale(0);
+  background-color: var(--main-bg-color);
+
+  @media (--not-small-vp) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.choice-list__input:checked::before {
+  transform: scale(1);
 }

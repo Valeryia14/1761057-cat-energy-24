@@ -4,7 +4,7 @@
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
-  padding: 13px 16px 14px;
+  padding: 13px 38px 14px 14px;
 
   &::placeholder {
     display: block;
@@ -18,5 +18,14 @@
     font-size: 20px;
     line-height: 30px;
     padding: 10px 20px 11px;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid var(--main-text-color);
+    outline-offset: -2px;
   }
 }

@@ -39,7 +39,7 @@
   line-height: 37px;
   text-transform: uppercase;
   position: relative;
-  padding: 0 0 0 70px;
+  padding: 0 0 0 79px;
   margin: 0;
   margin-bottom: 29px;
 
@@ -59,18 +59,33 @@
 .options__title--has_icon::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -16px;
   left: 0;
-  width: 68px;
-  height: 53px;
+  width: 70px;
+  height: 70px;
+
+  @media (--middle-vp) {
+    top: -26px;
+    right: -50px;
+    left: auto;
+    width: 280px;
+    height: 280px;
+  }
+
+  @media (--wide-vp) {
+    top: -50px;
+    left: -20px;
+    width: 140px;
+    height: 140px;
+  }
 }
 
 .options__title--icon_slimming::before {
-  background: url("../../icons/sprite.svg#slimming-s") no-repeat;
+  background: url("../../icons/sprite.svg#slimming") no-repeat;
 }
 
 .options__title--icon_tiger::before {
-  background: url("../../icons/sprite.svg#tiger-s") no-repeat;
+  background: url("../../icons/sprite.svg#tiger") no-repeat;
 }
 
 .options__description {
@@ -128,6 +143,10 @@
   &--icon_arrow:hover::after {
     background-position: 0;
     transition: all 0.2s ease-in-out;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (--not-small-vp) {

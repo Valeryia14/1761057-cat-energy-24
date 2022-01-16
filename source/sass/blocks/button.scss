@@ -12,8 +12,24 @@
   border: none;
   padding: 10px 0;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.3);
+  }
+
   &--show-all_color {
     color: var(--main-text-color);
     background-color: var(--accent-bg-color);
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgb(68, 68, 68, 0.3);
+    }
   }
 }

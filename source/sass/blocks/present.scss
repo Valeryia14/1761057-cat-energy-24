@@ -2,13 +2,20 @@
   min-height: 290px;
   margin-bottom: 35px;
   position: relative;
+  background: url("../../icons/sprite.svg#present") no-repeat top 59px center;
+  background-size: 78px 80px;
 
   @media (--middle-vp) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 60px;
+    background-position: 79px center;
     min-height: 200px;
     margin-bottom: 76px;
   }
 
   @media (--wide-vp) {
+    background-position: top 57px center;
     min-height: 100%;
     margin-bottom: 0;
   }
@@ -58,6 +65,13 @@
   color: var(--action-color);
   text-align: center;
   max-width: 161px;
-  padding: 59px 0 0;
+  padding: 187px 0 0;
   margin: 0 auto;
+
+  @media (--middle-vp) {
+    grid-column: 2/3;
+    text-align: left;
+    padding-top: 0;
+    margin: auto auto auto 39px;
+  }
 }
