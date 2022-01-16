@@ -4,7 +4,7 @@
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
-  padding: 13px 38px 14px 14px;
+  padding: 13px 13px 14px 14px;
 
   &::placeholder {
     display: block;
@@ -21,11 +21,16 @@
   }
 
   &:hover {
-    border-color: #cdcdcd;
+    border-color: var(--border-color);
   }
 
   &:focus {
     outline: 2px solid var(--main-text-color);
     outline-offset: -2px;
   }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
 }

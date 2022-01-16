@@ -7,21 +7,14 @@
           <source media="(min-width: 768px)" srcset="./img/logo.svg#logo-m">
           <img class="header-logo__img" src="./img/logo.svg#logo-s" width="34" height="38" alt="Логотип компании.">
         </picture>
-        <svg class="header-logo__text" role="img" aria-label="Логотип компании Cat Energy." width="101" height="18">
+        <svg class="header-logo__text" role="img" aria-label="Логотип компании Cat Energy." width="101" height="19">
           <use aria-hidden="true" href="./img/logo.svg#logo-text" />
         </svg>
       </a>
 
       <nav class="main-nav main-nav--closed main-nav--nojs {% if permalink == "index.html" %}
       main-nav--color_reshuffle{% endif %}">
-        <button class="main-nav__toggle" type="button">
-          <svg class="main-nav__svg-open" width="24" height="18" aria-label="Открыть меню">
-            <use xlink:href="#burger"></use>
-          </svg>
-          <svg class="main-nav__svg-close" width="20" height="20" aria-label="Закрыть меню">
-            <use xlink:href="#cross"></use>
-          </svg>
-        </button>
+        <button class="main-nav__toggle" type="button"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             {% for page in pages %}

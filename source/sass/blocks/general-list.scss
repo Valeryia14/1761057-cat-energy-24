@@ -20,6 +20,14 @@
   }
 }
 
-.general-list__input:invalid {
-  border-color: #ff8282;
+.general-list__input {
+  &:user-invalid {
+    border-color: #ff8282;
+  }
+
+  @supports not selector(:user-invalid) {
+    &--error {
+      border-color: #ff8282;
+    }
+  }
 }

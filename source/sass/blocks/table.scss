@@ -148,7 +148,7 @@
 
     @media (--not-small-vp) {
       padding: 7px 2px 8px 0;
-      border-bottom: 1px solid #cdcdcd;
+      border-bottom: 1px solid var(--border-color);
     }
 
     @media (--wide-vp) {
@@ -178,7 +178,7 @@
 
     @media (--not-small-vp) {
       padding: 9px 0 6px;
-      border-bottom: 1px solid #cdcdcd;
+      border-bottom: 1px solid var(--border-color);
     }
 
     @media (--wide-vp) {
@@ -204,7 +204,7 @@
 
     @media (--not-small-vp) {
       padding: 10px 0 8px;
-      border-bottom: 1px solid #cdcdcd;
+      border-bottom: 1px solid var(--border-color);
     }
 
     @media (--wide-vp) {

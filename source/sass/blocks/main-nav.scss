@@ -11,12 +11,12 @@
 .main-nav__toggle {
   content: "";
   position: absolute;
-  top: 0;
+  top: 20px;
   right: 20px;
-  z-index: 2;
   width: 24px;
-  height: 18px;
-  background-color: var(--action-color);
+  height: 24px;
+  z-index: 2;
+  background: var(--icon_menu) no-repeat;
   padding: 0;
   cursor: pointer;
   border: none;
@@ -26,26 +26,12 @@
   }
 }
 
-.main-nav--closed .main-nav__svg-open {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: 0;
+.main-nav--closed .main-nav__toggle {
+  --icon_menu: url("../../icons/sprite.svg#burger");
 }
 
-.main-nav--closed .main-nav__svg-close {
-  display: none;
-}
-
-.main-nav--opened .main-nav__svg-open {
-  display: none;
-}
-
-.main-nav--opened .main-nav__svg-close {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: 0;
+.main-nav--opened .main-nav__toggle {
+  --icon_menu: url("../../icons/sprite.svg#cross");
 }
 
 @media (--small-vp) {

@@ -25,7 +25,7 @@
   }
 }
 
-.contacts-list__item:focus-visible ~ .contacts-list__icon--icon_letter::before {
+.contacts-list__input:focus ~ .contacts-list__icon::before {
   background-color: var(--main-bg-color);
 }
 
@@ -34,7 +34,8 @@
 }
 
 .contacts-list__input {
-  border-color: #cdcdcd;
+  padding-right: 38px;
+  border-color: var(--border-color);
 
   @media (--wide-vp) {
     padding: 10px 19px;

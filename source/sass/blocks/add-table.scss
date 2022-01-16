@@ -1,8 +1,8 @@
 .add-table__line {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-top: 1px solid #cdcdcd;
-  border-bottom: 1px solid #cdcdcd;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   padding: 13px 0 18px;
 
   &:not(:last-child) {
@@ -13,7 +13,7 @@
   @media (--middle-vp) {
     grid-template-columns: repeat(4, 1fr);
     gap: 0 60px;
-    border: 1px solid #cdcdcd;
+    border: 1px solid var(--border-color);
     padding: 26px 38px 28px;
   }
 

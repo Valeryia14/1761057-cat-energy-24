@@ -24,15 +24,15 @@
                 <ul class="general-list form__list">
                   <li class="general-list__item">
                     <label class="general-list__label label" for="nickname">Имя:*</label>
-                    <input class="general-list__input input" type="text" name="name" id="nickname" placeholder="Барсик" required>
+                    <input class="general-list__input general-list__input--error input" type="text" name="name" id="nickname" placeholder="Барсик" required>
                   </li>
                   <li class="general-list__item">
                     <label class="general-list__label label" for="weight">Вес (кг):*</label>
-                    <input class="general-list__input input" type="number" name="heft" id="weight" placeholder="7" required>
+                    <input class="general-list__input general-list__input--error input" type="number" name="heft" id="weight" placeholder="7" required>
                   </li>
                   <li class="general-list__item">
                     <label class="general-list__label label" for="age">Возраст (лет):</label>
-                    <input class="general-list__input input" type="number" name="years" id="age" placeholder="7">
+                    <input class="general-list__input general-list__input--error input" type="number" name="years" id="age" placeholder="7">
                   </li>
                 </ul>
               </fieldset>
@@ -43,19 +43,19 @@
                   <li class="choice-list__item">
                     <label class="choice-list__label label">
                       <input class="choice-list__input" type="radio" name="options" value="slimming" checked>
-                      Похудение
+                      <span class="choice-list__span">Похудение</span>
                     </label>
                   </li>
                   <li class="choice-list__item">
                     <label class="choice-list__label label">
                       <input class="choice-list__input" type="radio" name="options" value="plump">
-                      Набор массы
+                      <span class="choice-list__span">Набор массы</span>
                     </label>
                   </li>
                   <li class="choice-list__item">
                     <label class="choice-list__label label">
                       <input class="choice-list__input" type="radio" name="options" value="advice">
-                      Не знаю (нужен ваш совет)
+                      <span class="choice-list__span">Не знаю (нужен ваш совет)</span>
                     </label>
                   </li>
                 </ul>
@@ -91,25 +91,25 @@
                 <li class="extra-list__item">
                   <label class="extra-list__label label">
                     <input class="extra-list__input" type="checkbox" name="additionally" value="sweetener" checked>
-                    Сахарозаменитель
+                    <span class="extra-list__span">Сахарозаменитель</span>
                   </label>
                 </li>
                 <li class="extra-list__item">
                   <label class="extra-list__label label">
                     <input class="extra-list__input" type="checkbox" name="additionally" value="drinking-water">
-                    Питьевая вода
+                    <span class="extra-list__span">Питьевая вода</span>
                   </label>
                 </li>
                 <li class="extra-list__item">
                   <label class="extra-list__label label">
                     <input class="extra-list__input" type="checkbox" name="additionally" value="milk">
-                    Молоко
+                    <span class="extra-list__span">Молоко</span>
                   </label>
                 </li>
                 <li class="extra-list__item">
                   <label class="extra-list__label label">
                     <input class="extra-list__input" type="checkbox" name="additionally" value="vitamins">
-                    Витамины
+                    <span class="extra-list__span">Витамины</span>
                   </label>
                 </li>
               </ul>

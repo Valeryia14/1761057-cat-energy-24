@@ -43,7 +43,7 @@
   box-sizing: border-box;
   width: 30px;
   height: 30px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid var(--border-color);
   transform: translateY(-18%);
   display: grid;
   place-content: center;
@@ -61,6 +61,10 @@
   &:disabled {
     border-color: rgb(186, 186, 186, 0.3);
   }
+}
+
+.extra-list__input:disabled + .extra-list__span {
+  color: rgb(186, 186, 186, 0.3);
 }
 
 .extra-list__input::before {
