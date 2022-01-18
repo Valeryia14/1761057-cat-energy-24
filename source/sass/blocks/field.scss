@@ -13,8 +13,8 @@
 
   &::after {
     @media (--small-vp) {
-      top: 17px;
-      transform: translateX(14px);
+      top: 16px;
+      transform: translateX(20px);
     }
 
     @media (--middle-vp) {
@@ -25,21 +25,25 @@
 
 .field__extra-legend {
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 39px;
   position: relative;
 
   &::after {
     @media (--small-vp) {
-      top: 12px;
+      top: 15px;
       transform: translateX(23px);
     }
 
     @media (--middle-vp) {
-      transform: translateX(38px);
+      transform: translateX(41px);
     }
   }
 
   @media (--not-small-vp) {
-    margin-bottom: 57px;
+    margin-bottom: 64px;
+  }
+
+  @media (--wide-vp) {
+    margin-bottom: 60px;
   }
 }

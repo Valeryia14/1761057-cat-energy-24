@@ -17,8 +17,12 @@
 }
 
 .address__street {
-  @media (--wide-vp) {
+  @media (--not-small-vp) {
     display: block;
+    margin-bottom: 18px;
+  }
+
+  @media (--wide-vp) {
     margin-bottom: 20px;
   }
 }

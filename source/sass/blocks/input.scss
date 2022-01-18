@@ -4,7 +4,7 @@
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
-  padding: 13px 13px 14px 14px;
+  // padding: 13px 13px 12px 16px;
   appearance: textfield;
 
   &::placeholder {
@@ -18,7 +18,7 @@
   @media (--not-small-vp) {
     font-size: 20px;
     line-height: 30px;
-    padding: 10px 20px 11px;
+    //padding: 10px 20px 11px;
   }
 
   &:hover {

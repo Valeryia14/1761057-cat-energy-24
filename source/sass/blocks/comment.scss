@@ -1,12 +1,12 @@
 .comment__chapter {
-  margin-bottom: 27px;
+  margin-bottom: 19px;
 
   @media (--middle-vp) {
-    margin-bottom: 65px;
+    margin-bottom: 61px;
   }
 
   @media (--wide-vp) {
-    margin-bottom: 67px;
+    margin-bottom: 64px;
   }
 }
 
@@ -15,7 +15,7 @@
 
   &::after {
     @media (--small-vp) {
-      top: 16px;
+      top: 15px;
       transform: translateX(22px);
     }
 
@@ -35,7 +35,7 @@
 
 .comment__text {
   min-height: 150px;
-  padding: 0 5px;
+  padding: 8px 5px;
   resize: vertical;
 
   &::placeholder {
@@ -48,6 +48,6 @@
 
   @media (--not-small-vp) {
     min-height: 174px;
-    padding: 10px 20px;
+    padding: 16px 18px 6px;
   }
 }

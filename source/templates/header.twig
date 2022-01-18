@@ -18,7 +18,8 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             {% for page in pages %}
-              <li class="main-nav__item">
+              <li class="main-nav__item" class="footer {% if permalink == "index.html" %}
+                footer--location_bg{% endif %}">
                 <a
                   class="main-nav__link"
                   href="{{ page.path }}"

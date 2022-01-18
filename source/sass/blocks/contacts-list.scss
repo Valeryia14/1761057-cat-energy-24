@@ -30,12 +30,24 @@
 }
 
 .contacts-list__label {
-  margin-right: 14px;
+  margin-right: 10px;
+
+  @media (--not-small-vp) {
+    margin-right: 17px;
+  }
 }
 
 .contacts-list__input {
-  padding-right: 38px;
+  padding: 13px 38px 12px 16px;
   border-color: var(--border-color);
+
+  @media (--not-small-vp) {
+    padding: 13px 38px 7px 16px;
+
+    &--email {
+      padding-left: 23px;
+    }
+  }
 
   @media (--wide-vp) {
     padding: 10px 19px;
@@ -54,27 +66,29 @@
   }
 }
 
-.contacts-list__icon--icon_letter::before {
-  content: "";
-  position: absolute;
-  top: 16px;
-  right: 15px;
-  width: 20px;
-  height: 15px;
-  background-color: var(--additional-text-color);
-  mask: url("../../icons/sprite.svg#letter") no-repeat center;
-}
-
-
+.contacts-list__icon--icon_letter::before,
 .contacts-list__icon--icon_phone::before {
   content: "";
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 13px;
+  right: 15px;
   width: 20px;
-  height: 15px;
+  height: 20px;
   background-color: var(--additional-text-color);
-  mask: url("../../icons/sprite.svg#phone") no-repeat center;
+  mask: var(--icon_input) no-repeat center;
+
+  @media (--not-small-vp) {
+    top: 16px;
+    right: 14px;
+  }
+}
+
+.contacts-list__icon--icon_letter::before {
+  --icon_input: url("../../icons/sprite.svg#letter");
+}
+
+.contacts-list__icon--icon_phone::before {
+  --icon_input: url("../../icons/sprite.svg#phone");
 }
 
 .contacts-list__icon--icon_phone:focus::before {

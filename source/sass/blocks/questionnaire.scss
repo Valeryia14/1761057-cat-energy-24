@@ -5,12 +5,13 @@
 .questionnaire__title {
   font-size: var(--title-size);
   line-height: 1;
-  padding: 27px 0 0;
+  padding: 28px 0 0;
   margin: 0;
   margin-bottom: 37px;
 
   @media (--not-small-vp) {
     font-size: var(--title-big-size);
+    padding-top: 0;
     margin-bottom: 54px;
   }
 

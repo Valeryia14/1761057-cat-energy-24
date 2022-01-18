@@ -17,7 +17,7 @@
     z-index: -1;
 
     @media (--not-small-vp) {
-      top: 23px;
+      top: 22px;
     }
 
     @media (--wide-vp) {
@@ -32,7 +32,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 23px;
+      top: 22px;
       right: 100%;
       width: 100vw;
       height: 2px;

@@ -1,11 +1,5 @@
 .main-nav {
   width: auto;
-
-  &--color_reshuffle {
-    @media (--wide-vp) {
-      --reshuffle-color: var(--action-color);
-    }
-  }
 }
 
 .main-nav__toggle {
@@ -119,6 +113,15 @@
     color: rgb(0, 0, 0, 0.6);
   }
 
+  &:active {
+    color: rgb(0, 0, 0, 0.3);
+  }
+
+  &[aria-current="page"] {
+    text-decoration: underline 2px var(--main-bg-color);
+    text-underline-offset: 8px;
+  }
+
   @media (--not-small-vp) {
     font-weight: 400;
     font-size: 18px;
@@ -128,5 +131,25 @@
   @media (--wide-vp) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.main-nav--color_reshuffle .main-nav__link {
+  --reshuffle-color: 256, 256, 256;
+  --action-color: 256, 256, 256;
+  color: rgb(var(--reshuffle-color, var(--action-color)), var(--alpha-color, 1));
+
+  @media (--wide-vp) {
+    &:hover {
+      --alpha-color: 0.6;
+    }
+
+    &:active {
+      --alpha-color: 0.3;
+    }
+
+    &[aria-current="page"] {
+      text-decoration: underline 2px;
+    }
   }
 }
