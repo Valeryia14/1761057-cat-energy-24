@@ -4,21 +4,11 @@
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
-  // padding: 13px 13px 12px 16px;
   appearance: textfield;
-
-  &::placeholder {
-    display: block;
-    font-family: var(--accent-font);
-    line-height: 18px;
-    color: var(--main-text-color);
-    text-transform: uppercase;
-  }
 
   @media (--not-small-vp) {
     font-size: 20px;
     line-height: 30px;
-    //padding: 10px 20px 11px;
   }
 
   &:hover {
@@ -28,6 +18,14 @@
   &:focus {
     outline: 2px solid var(--main-text-color);
     outline-offset: -2px;
+  }
+
+  &::placeholder {
+    display: block;
+    font-family: var(--accent-font);
+    line-height: 18px;
+    color: var(--main-text-color);
+    text-transform: uppercase;
   }
 }
 

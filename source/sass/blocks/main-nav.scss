@@ -109,6 +109,17 @@
   text-decoration: none;
   text-align: center;
 
+  @media (--not-small-vp) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (--wide-vp) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   &:hover {
     color: rgb(0, 0, 0, 0.6);
   }
@@ -121,22 +132,11 @@
     text-decoration: underline 2px var(--main-bg-color);
     text-underline-offset: 8px;
   }
-
-  @media (--not-small-vp) {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  @media (--wide-vp) {
-    font-size: 20px;
-    line-height: 30px;
-  }
 }
 
 .main-nav--color_reshuffle .main-nav__link {
   --reshuffle-color: 256, 256, 256;
-  --action-color: 256, 256, 256;
+  --action-color: 0, 0, 0;
   color: rgb(var(--reshuffle-color, var(--action-color)), var(--alpha-color, 1));
 
   @media (--wide-vp) {

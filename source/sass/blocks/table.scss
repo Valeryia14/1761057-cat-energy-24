@@ -17,11 +17,29 @@
   grid-template-columns: 1fr 1fr;
   position: relative;
 
+  @media (--not-small-vp) {
+    grid-template-columns: 1fr;
+    background-color: var(--accent-bg-color);
+    padding: 0 38px 39px;
+  }
+
+  @media (--wide-vp) {
+    padding: 0 33px 40px 35px;
+  }
+
   &--show_more {
     grid-template-columns: 1fr;
     padding-top: 59px;
     background: url("../../icons/sprite.svg#plus") no-repeat top 6px center;
     background-size: 30px;
+
+    @media (--not-small-vp) {
+      background-color: var(--action-color);
+      background-size: 60px;
+      background-position: top 52px center;
+      border: 2px solid var(--accent-bg-color);
+      padding-bottom: 36px;
+    }
   }
 
   @media (--small-vp) {
@@ -43,24 +61,6 @@
       right: 20px;
     }
   }
-
-  @media (--not-small-vp) {
-    grid-template-columns: 1fr;
-    background-color: var(--accent-bg-color);
-    padding: 0 38px 39px;
-
-    &--show_more {
-      background-color: var(--action-color);
-      background-size: 60px;
-      background-position: top 52px center;
-      border: 2px solid var(--accent-bg-color);
-      padding-bottom: 36px;
-    }
-  }
-
-  @media (--wide-vp) {
-    padding: 0 33px 40px 35px;
-  }
 }
 
 .table__title {
@@ -69,31 +69,31 @@
   padding: 0 0 13px;
   margin: 0;
 
-  &--title_position {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-  }
-
   @media (--not-small-vp) {
     grid-row: 2/3;
     text-align: center;
     width: 155px;
     padding: 35px 0 14px;
     margin: 0 auto;
-
-    &--title_position {
-      align-items: center;
-      width: 100%;
-      padding: 85px 0 0;
-    }
   }
 
   @media (--wide-vp) {
     padding-top: 36px;
+  }
 
-    &--title_position {
+  &--title_position {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+
+    @media (--not-small-vp) {
+      align-items: center;
+      width: 100%;
+      padding: 85px 0 0;
+    }
+
+    @media (--wide-vp) {
       padding-top: 85px;
     }
   }
@@ -109,24 +109,24 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  &--show_position {
-    text-align: center;
-    margin-bottom: 8px;
-  }
-
   @media (--not-small-vp) {
     font-size: 20px;
     line-height: 24px;
-
-    &--show_position {
-      line-height: 22px;
-      width: 160px;
-      margin-bottom: 23px;
-    }
   }
 
   @media (--wide-vp) {
     line-height: 21px;
+  }
+
+  &--show_position {
+    text-align: center;
+    margin-bottom: 8px;
+
+    @media (--not-small-vp) {
+      line-height: 22px;
+      width: 160px;
+      margin-bottom: 23px;
+    }
   }
 }
 

@@ -8,16 +8,6 @@
         var(--action-color) 55%,
         #eaeaea 55%
       );
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: -43px;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      background-color: #e6e6e6;
-    }
   }
 
   @media (--wide-vp) {
@@ -26,6 +16,18 @@
         var(--action-color) 22%,
         var(--accent-bg-color) 22%
       );
+  }
+
+  &::before {
+    @media (--middle-vp) {
+      content: "";
+      position: absolute;
+      top: -43px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #e6e6e6;
+    }
   }
 }
 

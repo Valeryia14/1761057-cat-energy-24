@@ -39,26 +39,6 @@
 .form__choice {
   position: relative;
 
-  @media (--small-vp) {
-    &::before,
-    &::after {
-      position: absolute;
-      content: "";
-      right: -20px;
-      width: 100vw;
-      height: 1px;
-      background-color: #d9d9d9;
-    }
-  }
-
-  &::before {
-    top: -29px;
-  }
-
-  &::after {
-    bottom: -15px;
-  }
-
   @media (--not-small-vp) {
     padding: 30px 28px 20px;
     border: 1px solid #e7e7e7;
@@ -66,6 +46,26 @@
 
   @media (--wide-vp) {
     margin-bottom: 0;
+  }
+
+  @media (--small-vp) {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      right: -20px;
+      width: 100vw;
+      height: 1px;
+      background-color: #d9d9d9;
+    }
+
+    &::before {
+      top: -29px;
+    }
+
+    &::after {
+      bottom: -15px;
+    }
   }
 }
 

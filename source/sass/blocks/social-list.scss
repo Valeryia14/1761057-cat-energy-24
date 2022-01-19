@@ -9,7 +9,13 @@
 
   @media (--small-vp) {
     margin-bottom: 43px;
+  }
 
+  @media (--not-small-vp) {
+    padding-right: 18px;
+  }
+
+  @media (--small-vp) {
     &::before,
     &::after {
       position: absolute;
@@ -26,10 +32,6 @@
     &::after {
       bottom: -22px;
     }
-  }
-
-  @media (--not-small-vp) {
-    padding-right: 18px;
   }
 }
 

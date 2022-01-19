@@ -43,10 +43,6 @@
 
   @media (--not-small-vp) {
     padding: 13px 38px 7px 16px;
-
-    &--email {
-      padding-left: 23px;
-    }
   }
 
   @media (--wide-vp) {
@@ -62,6 +58,12 @@
     &--error:required {
       outline: 2px solid #ff8282;
       outline-offset: -2px;
+    }
+  }
+
+  &--email {
+    @media (--not-small-vp) {
+      padding-left: 23px;
     }
   }
 }

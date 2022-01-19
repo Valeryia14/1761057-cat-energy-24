@@ -27,18 +27,6 @@
     padding: 13px 13px 7px 19px;
   }
 
-  &--name {
-    padding: 13px 13px 12px 13px;
-
-    @media (--not-small-vp) {
-      padding: 15px 13px 7px 13px;
-    }
-
-    @media (--wide-vp) {
-      padding-top: 13px;
-    }
-  }
-
   &:user-invalid {
     outline: 2px solid #ff8282;
     outline-offset: -2px;
@@ -48,6 +36,18 @@
     &--error:required {
       outline: 2px solid #ff8282;
       outline-offset: -2px;
+    }
+  }
+
+  &--name {
+    padding: 13px 13px 12px 13px;
+
+    @media (--not-small-vp) {
+      padding: 15px 13px 7px 13px;
+    }
+
+    @media (--wide-vp) {
+      padding-top: 13px;
     }
   }
 }

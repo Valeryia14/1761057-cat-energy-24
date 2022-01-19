@@ -10,6 +10,15 @@
 .page__centerer {
   margin: 0 20px;
 
+  @media (--middle-vp) {
+    margin: 0 30px;
+  }
+
+  @media (--wide-vp) {
+    margin: 0 auto;
+    width: 1220px;
+  }
+
   &--nav-menu_mob-position {
     margin: 0;
   }
@@ -23,14 +32,5 @@
   &--footer_position {
     display: flex;
     flex-direction: column;
-  }
-
-  @media (--middle-vp) {
-    margin: 0 30px;
-  }
-
-  @media (--wide-vp) {
-    margin: 0 auto;
-    width: 1220px;
   }
 }

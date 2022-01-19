@@ -27,8 +27,10 @@
 
   @media (--wide-vp) {
     padding: 77px 51px 55px 52px;
+  }
 
-    &--icon_tiger {
+  &--icon_tiger {
+    @media (--wide-vp) {
       padding-right: 61px;
     }
   }
@@ -94,18 +96,6 @@
   margin-bottom: 38px;
   position: relative;
 
-  @media (--small-vp) {
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -23px;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      background-color: #d9d9d9;
-    }
-  }
-
   @media (--not-small-vp) {
     font-size: var(--description-size-large);
     line-height: 24px;
@@ -117,6 +107,18 @@
   @media (--wide-vp) {
     max-width: 100%;
     margin-bottom: 23px;
+  }
+
+  &::after {
+    @media (--small-vp) {
+      content: "";
+      position: absolute;
+      bottom: -23px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #d9d9d9;
+    }
   }
 }
 
@@ -131,6 +133,15 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  @media (--not-small-vp) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &--icon_arrow::after {
     content: "";
     width: 32px;
@@ -143,14 +154,5 @@
   &--icon_arrow:hover::after {
     background-position: 0;
     transition: all 0.2s ease-in-out;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  @media (--not-small-vp) {
-    font-size: 20px;
-    line-height: 30px;
   }
 }

@@ -7,6 +7,11 @@
   display: block;
   position: relative;
 
+  @media (--not-small-vp) {
+    font-size: var(--title-size);
+    line-height: 1;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -25,11 +30,8 @@
     }
   }
 
-  @media (--not-small-vp) {
-    font-size: var(--title-size);
-    line-height: 1;
-
-    &::before {
+  &::before {
+    @media (--not-small-vp) {
       content: "";
       position: absolute;
       top: 22px;

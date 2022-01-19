@@ -2,10 +2,10 @@
   overflow: hidden;
   position: relative;
 
-  @media (--small-vp) {
-    &::before {
-      position: absolute;
+  &::before {
+    @media (--small-vp) {
       content: "";
+      position: absolute;
       width: 100%;
       height: 1px;
       top: 0;
