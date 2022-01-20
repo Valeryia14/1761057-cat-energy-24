@@ -3,12 +3,12 @@
   align-items: center;
   margin-bottom: 14px;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   @media (--not-small-vp) {
     margin-bottom: 19px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 

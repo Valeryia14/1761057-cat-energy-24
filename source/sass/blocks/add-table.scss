@@ -5,11 +5,6 @@
   border-bottom: 1px solid var(--border-color);
   padding: 13px 0 18px;
 
-  &:not(:last-child) {
-    border-bottom: none;
-  }
-
-
   @media (--middle-vp) {
     grid-template-columns: repeat(4, 1fr);
     gap: 0 60px;
@@ -22,6 +17,10 @@
     width: 895px;
     align-items: center;
     padding: 15px 0 16px;
+  }
+
+  &:not(:last-child) {
+    border-bottom: none;
   }
 }
 

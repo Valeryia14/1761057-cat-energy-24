@@ -14,11 +14,11 @@
 .extra-list__item {
   margin-bottom: 12px;
 
-  &:last-child {
+  @media (--not-small-vp) {
     margin-bottom: 0;
   }
 
-  @media (--not-small-vp) {
+  &:last-child {
     margin-bottom: 0;
   }
 }

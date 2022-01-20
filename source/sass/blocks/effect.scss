@@ -11,3 +11,13 @@
     height: 511px;
   }
 }
+
+.effect__button {
+  color: var(--accent-text-color);
+  background-color: transparent;
+
+  @media (--not-small-vp) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

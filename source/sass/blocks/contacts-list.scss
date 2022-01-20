@@ -12,15 +12,15 @@
   margin-bottom: 14px;
   position: relative;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   @media (--middle-vp) {
     margin-bottom: 20px;
   }
 
   @media (--wide-vp) {
+    margin-bottom: 0;
+  }
+
+  &:last-child {
     margin-bottom: 0;
   }
 }
