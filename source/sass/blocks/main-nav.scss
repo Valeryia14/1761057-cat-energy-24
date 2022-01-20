@@ -1,65 +1,78 @@
 .main-nav {
   width: auto;
+
+  &--closed {
+    --icon-menu: url("../../icons/sprite.svg#burger");
+    --nav-display: none;
+  }
+
+  &--opened {
+    --icon-menu: url("../../icons/sprite.svg#cross");
+  }
+
+  &--nojs {
+    --visibility-toggle: hidden;
+    --nav-position: static;
+  }
+
+  &--color_reshuffle {
+    @media (--wide-vp) {
+      --link-lightness: 100%;
+      --underline-color: currentColor;
+    }
+  }
 }
 
 .main-nav__toggle {
-  content: "";
   position: absolute;
+  z-index: 4;
   top: 20px;
   right: 20px;
-  width: 24px;
-  height: 24px;
-  z-index: 2;
-  background: var(--icon_menu) no-repeat;
-  padding: 0;
-  cursor: pointer;
   border: none;
+  background: initial;
+  visibility: var(--visibility-toggle, visible);
 
   @media (--not-small-vp) {
-    display: none;
-  }
-}
-
-.main-nav--closed .main-nav__toggle {
-  --icon_menu: url("../../icons/sprite.svg#burger");
-}
-
-.main-nav--opened .main-nav__toggle {
-  --icon_menu: url("../../icons/sprite.svg#cross");
-}
-
-@media (--small-vp) {
-  .main-nav--closed .main-nav__list {
-    display: none;
+    --visibility-toggle: hidden;
   }
 
-  .main-nav--opened .main-nav__wrapper {
-    position: absolute;
-    top: 65px;
-    right: 0;
-    left: 0;
-    z-index: 3;
-    min-height: 50vh;
+  &:hover {
+    --icon-opacity: 0.6;
   }
 
-  .main-nav--nojs .main-nav__toggle {
-    display: none;
+  &:active {
+    --icon-opacity: 0.3;
   }
 
-  .main-nav--nojs .main-nav__wrapper {
-    position: static;
-    padding-top: 17px;
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: var(--icon-menu) no-repeat;
+    opacity: var(--icon-opacity, 1);
   }
 }
 
 .main-nav__list {
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style: none;
+  display: var(--nav-display, revert);
   background-color: var(--action-color);
 
+  @media (--small-vp) {
+    position: var(--nav-position, absolute);
+    top: 48px;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    padding-top: 17px;
+  }
+
   @media (--not-small-vp) {
-    display: flex;
+    --nav-display: flex;
+
     flex-wrap: wrap;
     justify-content: flex-end;
     background-color: transparent;
@@ -69,87 +82,71 @@
 .main-nav__item {
   @media (--small-vp) {
     border-top: 1px solid #e6e6e6;
-
-    &:last-child {
-      border-bottom: 1px solid #e6e6e6;
-    }
   }
 
   @media (--not-small-vp) {
     margin-right: 38px;
-
-    &:first-child {
-      margin-right: 33px;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 
   @media (--wide-vp) {
     margin-right: 33px;
+  }
 
-    &:first-child {
+  &:first-child {
+    @media (--not-small-vp) {
+      margin-right: 33px;
+    }
+
+    @media (--wide-vp) {
       margin-right: 36px;
+    }
+  }
+
+  &:last-child {
+    @media (--small-vp) {
+      border-bottom: 1px solid #e6e6e6;
+    }
+
+    @media (--not-small-vp) {
+      margin-right: 0;
     }
   }
 }
 
 .main-nav__link {
-  font-family: var(--accent-font);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1;
-  color: var(--reshuffle-color, var(--accent-text-color));
   position: relative;
   display: block;
   padding: 25px 0 21px;
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--accent-font);
+  color: hsl(0deg 0% var(--link-lightness, 0%) / var(--link-alpha, 1));
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
 
   @media (--not-small-vp) {
-    font-weight: 400;
-    font-size: 18px;
     line-height: 24px;
+    font-size: 18px;
+    font-weight: 400;
   }
 
   @media (--wide-vp) {
-    font-size: 20px;
     line-height: 30px;
+    font-size: 20px;
   }
 
   &:hover {
-    color: rgb(0, 0, 0, 0.6);
+    --link-alpha: 0.6;
   }
 
   &:active {
-    color: rgb(0, 0, 0, 0.3);
+    --link-alpha: 0.3;
   }
 
   &[aria-current="page"] {
-    text-decoration: underline 2px var(--main-bg-color);
+    text-decoration: underline 2px var(--underline-color, var(--main-bg-color));
     text-underline-offset: 8px;
-  }
-}
-
-.main-nav--color_reshuffle .main-nav__link {
-  --reshuffle-color: 256, 256, 256;
-  --action-color: 0, 0, 0;
-  color: rgb(var(--reshuffle-color, var(--action-color)), var(--alpha-color, 1));
-
-  @media (--wide-vp) {
-    &:hover {
-      --alpha-color: 0.6;
-    }
-
-    &:active {
-      --alpha-color: 0.3;
-    }
-
-    &[aria-current="page"] {
-      text-decoration: underline 2px;
-    }
   }
 }

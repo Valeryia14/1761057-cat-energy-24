@@ -12,10 +12,11 @@
         </svg>
       </a>
 
-      <nav class="main-nav main-nav--closed main-nav--nojs {% if permalink == "index.html" %}
+      <nav class="main-nav main-nav--opened main-nav--nojs {% if permalink == "index.html" %}
       main-nav--color_reshuffle{% endif %}">
-        <button class="main-nav__toggle" type="button"></button>
-        <div class="main-nav__wrapper">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Переключить отображение навигации</span>
+        </button>
           <ul class="main-nav__list">
             {% for page in pages %}
               <li class="main-nav__item" class="footer {% if permalink == "index.html" %}
@@ -30,7 +31,6 @@
               </li>
             {% endfor %}
           </ul>
-        </div>
       </nav>
     </div>
   </div>
