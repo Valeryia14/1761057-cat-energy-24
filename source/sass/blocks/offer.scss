@@ -63,7 +63,7 @@
   position: relative;
 
   @media (--middle-vp) {
-    min-height: 920px;
+    min-height: 809px;
     order: 2;
     margin-bottom: 0;
   }
@@ -91,10 +91,10 @@
   }
 
   @media (--middle-vp) {
-    top: 201px;
+    top: 200px;
     width: 709px;
     height: 609px;
-    transform: translateX(-56%);
+    transform: translateX(-399px);
     background: var(--url-box-m) no-repeat;
     background-size: cover;
 
@@ -149,7 +149,7 @@
   text-transform: uppercase;
   text-align: center;
   padding: 0;
-  margin: 0 0 49px 0;
+  margin: 0 0 48px;
   z-index: 1;
 
   @media (--not-small-vp) {
@@ -176,7 +176,7 @@
   @media (--not-small-vp) {
     font-size: 20px;
     min-width: 244px;
-    padding: 14px 0;
-    margin: 0;
+    padding: 18px 0;
+    margin: 0 0 0 3px;
   }
 }

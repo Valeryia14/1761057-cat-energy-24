@@ -50,7 +50,7 @@
     &--number::before {
       position: absolute;
       top: -40px;
-      right: 71px;
+      right: 77px;
       font-family: var(--accent-font);
       font-size: 280px;
       line-height: 1;
@@ -63,6 +63,7 @@
 
     &--number_one::before {
       content: "1";
+      right: 95px;
     }
 
     &--number_two::before {
@@ -111,6 +112,7 @@
   width: 60px;
   height: 60px;
   background: var(--main-bg-color) var(--bg-icon) no-repeat center;
+  background-size: 40px 40px;
 
   @media (--not-small-vp) {
     width: 80px;
@@ -120,20 +122,16 @@
 
 .process__description--icon_leaf::before {
   --bg-icon: url("../../icons/sprite.svg#leaf");
-  background-size: 31px 32px;
 }
 
 .process__description--icon_powder::before {
   --bg-icon: url("../../icons/sprite.svg#powder");
-  background-size: 31px 31px;
 }
 
 .process__description--icon_tableware::before {
   --bg-icon: url("../../icons/sprite.svg#tableware");
-  background-size: 25px 30px;
 }
 
 .process__description--icon_alarm::before {
   --bg-icon: url("../../icons/sprite.svg#alarm");
-  background-size: 32px 33px;
 }

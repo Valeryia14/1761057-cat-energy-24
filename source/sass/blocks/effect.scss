@@ -1,21 +1,38 @@
 .effect {
+  --display: 1;
+
   @media (--not-small-vp) {
-    padding-bottom: 59px;
+    padding-bottom: 50px;
   }
 }
 
 .effect__photos {
-  margin: 0;
+  display: grid;
+  grid-template-columns: auto calc(100% * (1 - var(--display)));
+  margin: 0 0 10px;
+
+  @media (--not-small-vp) {
+    margin-bottom: 6px;
+  }
 }
 
 .effect__photo {
   display: block;
+  object-fit: cover;
   margin: 0 auto;
 
   @media (--not-small-vp) {
     width: 592px;
     height: 511px;
     margin-bottom: 25px;
+  }
+
+  &--before {
+    object-position: left;
+  }
+
+  &-after {
+    object-position: right;
   }
 }
 
@@ -27,12 +44,12 @@
 
 .effect__range-scale {
   position: relative;
-  width: 84px;
+  width: 71px;
   height: 6px;
   border: 1px solid var(--border-color);
   background-color: var(--action-color);
   border-radius: 6px;
-  margin: 0 15px;
+  margin: 0 9px;
   padding: 3px 6px;
 
   @media (--not-small-vp) {
@@ -50,6 +67,7 @@
   background-color: var(--main-bg-color);
   border: none;
   border-radius: 6px;
+  margin-left: calc(100% * (1 - var(--display)));
 
   @media (--not-small-vp) {
     top: -14px;

@@ -30,6 +30,7 @@
   right: 20px;
   border: none;
   background: initial;
+  padding: 0;
   visibility: var(--visibility-toggle, visible);
 
   @media (--not-small-vp) {
@@ -147,6 +148,6 @@
 
   &[aria-current="page"] {
     text-decoration: underline 2px var(--underline-color, var(--main-bg-color));
-    text-underline-offset: 8px;
+    text-underline-offset: 11px;
   }
 }
