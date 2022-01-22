@@ -64,6 +64,10 @@
     &--number_one::before {
       content: "1";
       right: 95px;
+
+      @media (--wide-vp) {
+        right: 14px;
+      }
     }
 
     &--number_two::before {

@@ -4,6 +4,10 @@
   @media (--not-small-vp) {
     padding-bottom: 50px;
   }
+
+  @media (--wide-vp) {
+    margin-top: -40px;
+  }
 }
 
 .effect__photos {

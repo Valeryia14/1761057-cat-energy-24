@@ -44,8 +44,8 @@
   @media (--wide-vp) {
     top: 0;
     --url-cat-s: url("../../img/main-bg-l@1x.jpg");
-    min-height: 694px;
-    background-position: top 0 left -20px;
+    min-height: 693px;
+    background-position: top 0 left 1px;
     left: 50%;
   }
 
@@ -69,9 +69,9 @@
   }
 
   @media (--wide-vp) {
-    min-height: 455px;
+    min-height: 470px;
     padding-right: 65px;
-    margin-bottom: 82px;
+    margin-bottom: 83px;
   }
 }
 
@@ -178,5 +178,9 @@
     min-width: 244px;
     padding: 18px 0;
     margin: 0 0 0 3px;
+  }
+
+  @media (--wide-vp) {
+    margin-left: 0;
   }
 }
