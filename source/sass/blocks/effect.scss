@@ -13,20 +13,34 @@
 .effect__photos {
   display: grid;
   grid-template-columns: auto calc(100% * (1 - var(--display)));
+  width: 100%;
+  max-width: 280px;
   margin: 0 0 10px;
+
+  @media (--not-small-vp) {
+    max-width: 592px;
+  }
 
   @media (--not-small-vp) {
     margin-bottom: 6px;
   }
 }
 
+.effect__photos-wrapper {
+  grid-column: 1/2;
+
+  &--after {
+    grid-column: 2/3;
+  }
+}
+
 .effect__photo {
   display: block;
   object-fit: cover;
+  height: 232px;
   margin: 0 auto;
 
   @media (--not-small-vp) {
-    width: 592px;
     height: 511px;
     margin-bottom: 25px;
   }
@@ -64,13 +78,14 @@
   }
 }
 
-.effect__range-toggle {
+.effect__range-thumb {
   position: absolute;
   width: 36px;
   height: 6px;
   background-color: var(--main-bg-color);
   border: none;
   border-radius: 6px;
+  box-sizing: border-box;
   margin-left: calc(100% * (1 - var(--display)));
 
   @media (--not-small-vp) {

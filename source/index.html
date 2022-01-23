@@ -84,16 +84,18 @@
           </div>
           <div class="effect">
             <figure class="effect__photos">
-              {{ macros.picture("effect__photo effect__photo--before", "cat-fat", "png", "./img/", "Каким был Ваш кот.", "280", "232", null) }}
-          <!-- {{ macros.picture("effect__photo effect__photo--after", "cat-thin", "png", "./img/", "Каким стал Ваш кот.", "243", "232", null) }} -->
+              <div class="effect__photos-wrapper">
+                {{ macros.picture("effect__photo effect__photo--before", "cat-fat", "png", "./img/", "Каким был Ваш кот.", "280", "232", null) }}
+              </div>
+              <div class="effect__photos-wrapper effect__photos-wrapper--after">
+                {{ macros.picture("effect__photo effect__photo--after", "cat-thin", "png", "./img/", "Каким стал Ваш кот.", "243", "232", null) }}
+              </div>
               <figcaption class="visually-hidden">Живой пример до функционального питания и после</figcaption>
             </figure>
             <div class="effect__slider">
               <button class="effect__button button" type="button">Было</button>
               <div class="effect__range-scale">
-                <div class="effect__range-toggle">
-                  <span class="visually_hidden" hidden>Переключатель слайдера</span>
-                </div>
+                <div class="effect__range-thumb"></div>
               </div>
               <button class="effect__button button" type="button">Стало</button>
             </div>
