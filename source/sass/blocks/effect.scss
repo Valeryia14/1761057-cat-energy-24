@@ -2,6 +2,7 @@
   --display: 1;
 
   @media (--not-small-vp) {
+    --display: 0.5;
     padding-bottom: 50px;
   }
 
@@ -18,7 +19,6 @@
   margin: 0 auto;
 
   @media (--not-small-vp) {
-    --display: 0.5;
     max-width: 592px;
   }
 }
@@ -36,7 +36,6 @@
   object-fit: cover;
   width: 100%;
   height: 232px;
-  margin: 0 auto;
 
   @media (--not-small-vp) {
     height: 511px;
@@ -88,7 +87,6 @@
 
   @media (--not-small-vp) {
     top: -14px;
-    left: 50%;
     width: 32px;
     height: 32px;
     background-color: var(--action-color);
