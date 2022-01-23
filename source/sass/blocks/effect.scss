@@ -15,14 +15,11 @@
   grid-template-columns: auto calc(100% * (1 - var(--display)));
   width: 100%;
   max-width: 280px;
-  margin: 0 0 10px;
+  margin: 0 auto;
 
   @media (--not-small-vp) {
+    --display: 0.5;
     max-width: 592px;
-  }
-
-  @media (--not-small-vp) {
-    margin: 0 auto;
   }
 }
 
