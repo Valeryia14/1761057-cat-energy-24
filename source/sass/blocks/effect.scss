@@ -1,7 +1,6 @@
 .effect {
   --display: 0;
   --scale-width: 71px;
-  --scale-padding: 6px;
   --thumb-width: 36px;
 
   @media (--not-small-vp) {
@@ -68,7 +67,7 @@
   background-color: var(--action-color);
   border-radius: 6px;
   margin: 0 9px;
-  padding: 3px var(--scale-padding);
+  padding: 3px 6px;
 
   @media (--not-small-vp) {
     --scale-width: 426px;
@@ -79,19 +78,17 @@
 }
 
 .effect__range-thumb {
-  position: absolute;
   width: var(--thumb-width);
   height: 6px;
   background-color: var(--main-bg-color);
   border: none;
   border-radius: 6px;
   box-sizing: border-box;
-  margin: calc(var(--scale-width) - 2 * var(--scale-padding) - var());
+  margin-left: calc(var(--display) * (var(--scale-width) - var(--thumb-width)));
 
   @media (--not-small-vp) {
     --thumb-width: 32px;
-    top: -14px;
-    left: 50%;
+    margin-top: -13px;
     height: 32px;
     background-color: var(--action-color);
     border-radius: 50%;
