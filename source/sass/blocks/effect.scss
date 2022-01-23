@@ -1,5 +1,5 @@
 .effect {
-  --display: 1;
+  --display: 0;
 
   @media (--not-small-vp) {
     --display: 0.5;
@@ -13,7 +13,7 @@
 
 .effect__photos {
   display: grid;
-  grid-template-columns: auto calc(100% * (1 - var(--display)));
+  grid-template-columns: calc(100% * (1 - var(--display))) calc(100% * var(--display));
   width: 100%;
   max-width: 280px;
   margin: 0 auto;
@@ -83,10 +83,10 @@
   border: none;
   border-radius: 6px;
   box-sizing: border-box;
-  margin-left: calc(100% * (1 - var(--display)));
 
   @media (--not-small-vp) {
     top: -14px;
+    left: 50%;
     width: 32px;
     height: 32px;
     background-color: var(--action-color);
