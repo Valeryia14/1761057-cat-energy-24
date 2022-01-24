@@ -16,12 +16,11 @@
 .effect__photos {
   display: grid;
   grid-template-columns: calc(100% * (1 - var(--display))) calc(100% * var(--display));
-  width: 100%;
-  max-width: 280px;
+  width: 280px;
   margin: 0 auto;
 
   @media (--not-small-vp) {
-    max-width: 592px;
+    width: 592px;
   }
 }
 

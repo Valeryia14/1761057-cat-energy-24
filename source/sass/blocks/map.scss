@@ -1,11 +1,13 @@
-.map iframe {
+.map__img {
+  display: block;
+}
+
+.map__address {
   display: block;
   border: none;
   width: 100%;
   z-index: -1;
-}
 
-iframe {
   @media (--not-small-vp) {
     height: 400px;
   }

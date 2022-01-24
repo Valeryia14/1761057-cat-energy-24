@@ -33,12 +33,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 134px 60px;
+    counter-reset: section;
   }
 
   @media (--wide-vp) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0 80px;
+    gap: 134px 80px;
   }
 }
 
@@ -55,6 +56,8 @@
       font-size: 280px;
       line-height: 1;
       color: var(--accent-bg-color);
+      counter-increment: section;
+      content: counter(section);
 
       @media (--wide-vp) {
         right: 0;
@@ -62,24 +65,11 @@
     }
 
     &--number_one::before {
-      content: "1";
       right: 95px;
 
       @media (--wide-vp) {
         right: 14px;
       }
-    }
-
-    &--number_two::before {
-      content: "2";
-    }
-
-    &--number_three::before {
-      content: "3";
-    }
-
-    &--number_four::before {
-      content: "4";
     }
   }
 }

@@ -1,6 +1,10 @@
 .main-nav {
   width: auto;
 
+  @media (--wide-vp) {
+    max-width: 50%;
+  }
+
   &--closed {
     --icon-menu: url("../../icons/sprite.svg#burger");
     --nav-display: none;
