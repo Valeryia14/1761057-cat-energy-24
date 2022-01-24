@@ -40,7 +40,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 80px;
-    padding-bottom: 70px;
+    padding-bottom: 10px;
+  }
+}
+
+.exapmle__effect {
+  @media (--wide-vp) {
+    margin-top: -43px;
+    margin-right: -2px;
   }
 }
 
@@ -48,7 +55,7 @@
   margin-bottom: 20px;
 
   @media (--not-small-vp) {
-    margin-bottom: 45px;
+    margin-bottom: 56px;
   }
 }
 
@@ -66,7 +73,7 @@
   }
 
   @media (--wide-vp) {
-    margin-bottom: 143px;
+    margin-bottom: 147px;
   }
 }
 
@@ -82,7 +89,7 @@
 
   @media (--wide-vp) {
     max-width: 436px;
-    margin-bottom: 72px;
+    margin-bottom: 70px;
   }
 }
 

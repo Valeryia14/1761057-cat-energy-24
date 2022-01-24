@@ -1,12 +1,32 @@
-.map iframe {
-  display: block;
-  border: none;
-  width: 100%;
-  z-index: -1;
+.map {
+  display: grid;
 }
 
-iframe {
+.map__static {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.map__interactive {
+  grid-area: 1 / 1 / 2 / 2;
+  border: none;
+  width: 100%;
+
   @media (--not-small-vp) {
     height: 400px;
+  }
+}
+
+.map__img {
+  display: block;
+  width: 280px;
+  height: 362px;
+
+  @media (--not-small-vp) {
+    width: 708px;
+    height: 400px;
+  }
+
+  @media (--wide-vp) {
+    width: 1220px;
   }
 }

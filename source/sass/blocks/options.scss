@@ -144,13 +144,13 @@
   &--icon_arrow::after {
     content: "";
     width: 32px;
-    height: 10px;
+    height: 12px;
     margin-left: 17px;
     background: url("../../icons/sprite.svg#arrow") no-repeat center / cover;
     background-position: -8px;
 
     @media (--not-small-vp) {
-      margin-left: 25px;
+      margin-left: 28px;
     }
   }
 
