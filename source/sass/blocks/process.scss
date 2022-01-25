@@ -28,12 +28,12 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  counter-reset: section;
 
   @media (--middle-vp) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 134px 60px;
-    counter-reset: section;
   }
 
   @media (--wide-vp) {

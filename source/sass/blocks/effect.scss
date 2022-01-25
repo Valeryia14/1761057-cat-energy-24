@@ -9,7 +9,7 @@
   }
 
   @media (--wide-vp) {
-    margin-top: -40px;
+    margin-top: -42px;
   }
 }
 
@@ -40,7 +40,7 @@
 
   @media (--not-small-vp) {
     height: 511px;
-    margin-bottom: 25px;
+    margin-bottom: 19px;
   }
 
   &--before {
@@ -56,6 +56,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (--middle-vp) {
+    margin-left: 6px;
+  }
 }
 
 .effect__range-scale {
@@ -71,6 +75,7 @@
     --scale-width: 426px;
     background-color: #dcdcdc;
     border: none;
+    margin: 0 14px;
     padding: 0;
   }
 }
@@ -86,6 +91,7 @@
 
   @media (--not-small-vp) {
     --thumb-width: 32px;
+    position: relative;
     margin-top: -13px;
     height: 32px;
     background-color: var(--action-color);
@@ -94,7 +100,6 @@
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
     cursor: pointer;
     padding: 0;
-    transform: translateX(-50%);
   }
 
   &:hover {
