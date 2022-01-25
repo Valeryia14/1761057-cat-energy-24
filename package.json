@@ -29,7 +29,7 @@
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --custom-syntax postcss-scss",
+    "stylelint": "stylelint \"source/sass/**/*.scss\"",
     "test": "npm run editorconfig && npm run stylelint && gulp validateMarkup",
     "build": "gulp build",
     "start": "gulp"
@@ -51,7 +51,7 @@
     "source/sass/**/*.scss"
   ],
   "engines": {
-    "node": "16.13.0"
+    "node": "16.x"
   },
   "type": "module"
 }
