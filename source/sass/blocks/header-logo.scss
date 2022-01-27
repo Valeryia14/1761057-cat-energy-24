@@ -6,6 +6,7 @@
   @media (--small-vp) {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
+    margin-bottom: 16px;
   }
 
   &:hover {

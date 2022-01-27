@@ -7,6 +7,7 @@
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
   appearance: textfield;
+  text-transform: uppercase;
 
   @media (--not-small-vp) {
     font-size: 20px;

@@ -20,7 +20,9 @@ footer--location_bg{% endif %}">
   <div class="map">
     <h2 class="visually-hidden">Месторасположение на карте</h2>
     <noscript class="map__static page__centerer">
-      {{ macros.picture("map__img", "map", "png", "./img/", "Адрес на карте.", "280", "362") }}
+      <div class="map__coordinates">
+        {{ macros.picture("map__img", "map", "png", "./img/", "Адрес на карте.", "280", "362") }}
+      </div>
     </noscript>
     <iframe class="map__interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300295!2d30.320858715957417!3d59.93871916905443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sby!4v1639667915091!5m2!1sen!2sby" width="320" height="362" allowfullscreen title="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></iframe>
   </div>

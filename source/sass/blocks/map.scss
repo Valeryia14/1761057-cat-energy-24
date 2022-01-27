@@ -16,10 +16,44 @@
   }
 }
 
+.map__coordinates {
+  position: relative;
+
+  &::after {
+    --url-map-mark: url("../../img/map-mark@1x.png");
+
+    position: absolute;
+    content: "";
+    width: 57px;
+    height: 53px;
+    top: 138px;
+    left: 114px;
+    background: var(--url-map-mark) no-repeat;
+    background-size: cover;
+
+    @media (--x2) {
+      --url-map-mark: url("../../img/map-mark@2x.png");
+    }
+
+    @media (--not-small-vp) {
+      width: 113px;
+      height: 104px;
+      top: 145px;
+      left: 303px;
+    }
+
+    @media (--wide-vp) {
+      top: 131px;
+      left: 798px;
+    }
+  }
+}
+
 .map__img {
   display: block;
   width: 280px;
   height: 362px;
+  position: relative;
 
   @media (--not-small-vp) {
     width: 708px;

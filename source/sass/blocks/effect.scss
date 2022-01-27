@@ -7,6 +7,11 @@
     --display: 0.5;
     padding-bottom: 50px;
   }
+
+  @media (--wide-vp) {
+    margin-top: -43px;
+    margin-right: -2px;
+  }
 }
 
 .effect__photos {
